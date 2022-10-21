@@ -1,0 +1,22 @@
+.text-content {
+	backdrop-filter: blur(24px);
+	padding: 200px 75px 0 75px;
+	height: 100%;
+	min-height: 100%;
+	width: 750px;
+	box-sizing: border-box;
+	color: white;
+	background: linear-gradient(180deg, #accdeb 0%, rgba(86, 86, 85, 0) 100%);
+
+	@media screen and (max-width: 1006px) {
+		align-self: center;
+		height: fit-content;
+		min-height: unset;
+		padding: 200px 45px 86px 45px;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: calc(100% - 40px);
+		padding: 75px 20px 42px 20px;
+	}
+}

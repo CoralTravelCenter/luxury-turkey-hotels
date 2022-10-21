@@ -1,0 +1,16 @@
+.hotels__location-text {
+	@include description_min;
+	font-size: 2vh;
+
+	@media screen and (max-width: 1006px) {
+		font-size: 2vw;
+	}
+
+	@media screen and (max-width: 768px) {
+		max-width: fit-content;
+	}
+
+	@media screen and (max-width: 479px) {
+		font-size: 3vw;
+	}
+}

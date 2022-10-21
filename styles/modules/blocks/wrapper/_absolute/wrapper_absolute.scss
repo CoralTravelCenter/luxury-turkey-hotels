@@ -1,0 +1,11 @@
+.wrapper_absolute {
+    position: absolute !important;
+    width: calc(100% - 200px) !important;
+    right: 5vw;
+
+    @media screen and (max-width: 1006px) {
+        position: relative !important;
+        width: 100% !important;
+        right: unset;
+    }
+}

@@ -1,0 +1,24 @@
+.icons {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	row-gap: 60px;
+	column-gap: 72px;
+	padding: 0;
+	margin: 0 0 100px 0;
+
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	@media screen and (max-width: 1006px) {
+		column-gap: 32px;
+	}
+
+	@media screen and (max-width: 768px) {
+		column-gap: 16px;
+        row-gap: 30px;
+        margin: 0 0 50px 0;
+	}
+}

@@ -1,0 +1,16 @@
+.submenu__navlist {
+    padding: 0;
+    list-style: none;
+    overflow: scroll;
+    height: calc(50vh - 48px);
+    margin: 0;
+
+    &::-webkit-scrollbar {
+        background: #fff;
+        width: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+        width: 3px;
+    }
+}

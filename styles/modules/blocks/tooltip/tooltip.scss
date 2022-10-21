@@ -1,0 +1,236 @@
+.tooltip {
+	position: absolute !important;
+	cursor: pointer;
+	display: flex !important;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: flex-end;
+	pointer-events: none;
+	opacity: 1 !important;
+	font-size: unset !important;
+	text-align: unset !important;
+	font-weight: unset !important;
+	font-style: unset !important;
+	text-decoration: unset !important;
+	text-shadow: unset !important;
+	letter-spacing: unset !important;
+	word-break: unset !important;
+	word-spacing: unset !important;
+	white-space: unset !important;
+	line-break: unset !important;
+	word-wrap: unset !important;
+	z-index: 9 !important;
+	line-height: unset !important;
+}
+
+#cape-bodrum-luxury-hotel-beach-bodrum {
+	top: calc(50% - -4.7%);
+	left: calc(50% - 23.9%);
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -3.7%);
+		left: calc(50% - 24.1%);
+	}
+
+	@media screen and (max-width: 768px) {
+		top: calc(50% - 0%);
+		left: calc(50% - 18.7%);
+	}
+}
+
+#caja-by-maxx-royal-bodrum {
+	top: calc(50% - -4.9%);
+	left: calc(50% - 23.4%);
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -4.2%);
+		left: calc(50% - 23.6%);
+	}
+
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -0.4%);
+		left: calc(50% - 17.8%);
+	}
+}
+
+#hilton-dalaman-sarigerme-resort-spa-dalaman {
+	top: calc(50% - -23.8%);
+	left: calc(50% - 4.6%);
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -23.1%);
+		left: calc(50% - 4.7%);
+	}
+
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -17.4%);
+		left: calc(50% - -21.4%);
+	}
+}
+
+#mandarin-oriental-bodrum {
+	top: calc(50% - -5.9%);
+	left: calc(50% - 22.7%);
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -5.1%);
+		left: calc(50% - 22.9%);
+	}
+
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -1.2%);
+		left: calc(50% - 16.2%);
+	}
+
+	z-index: 20 !important;
+}
+
+#kempinski-hotel-barbaros-bay-bodrum {
+	top: calc(50% - -11.5%);
+	left: calc(50% - 21.6%);
+	z-index: 23 !important;
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -10.8%);
+		left: calc(50% - 21.6%);
+	}
+
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -6.2%);
+		left: calc(50% - 13.9%);
+	}
+}
+
+#doora-bodrum-hotel {
+	top: calc(50% - -7.7%);
+	left: calc(50% - 21.8%);
+	z-index: 21 !important;
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -7.3%);
+		left: calc(50% - 22.1%);
+	}
+
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -3%);
+		left: calc(50% - 14.4%);
+	}
+}
+
+#mivara-luxury-resort-spa-bodrum {
+	top: calc(50% - -5.7%);
+	left: calc(50% - 23.2%);
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -4.9%);
+		left: calc(50% - 23.3%);
+	}
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -0.7%);
+		left: calc(50% - 17.1%);
+	}
+}
+
+#le-meridien-bodrum-beach-resort {
+	top: calc(50% - -4.1%);
+	left: calc(50% - 21.1%);
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -3.1%);
+		left: calc(50% - 21.1%);
+	}
+	@media screen and (max-width: 768px) {
+		top: calc(50% - 0.5%);
+		left: calc(50% - 12.7%);
+	}
+}
+
+#xanadu-island-hotel {
+	top: calc(50% - -12.5%);
+	left: calc(50% - 24.5%);
+	z-index: 23 !important;
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -11.6%);
+		left: calc(50% - 24.6%);
+	}
+
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -7.2%);
+		left: calc(50% - 19.7%);
+	}
+}
+
+#be-premium-bodrum {
+	top: calc(50% - -6.7%);
+	left: calc(50% - 21.3%);
+	z-index: 20 !important;
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -6.5%);
+		left: calc(50% - 21.3%);
+	}
+
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -2.1%);
+		left: calc(50% - 13.7%);
+	}
+}
+
+#kaya-palazzo-resort-residence {
+	top: calc(50% - -10.2%);
+	left: calc(50% - 22.7%);
+	z-index: 22 !important;
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -9.7%);
+		left: calc(50% - 22.7%);
+	}
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -5%);
+		left: calc(50% - 16.3%);
+	}
+}
+
+#lujo-hotel-bodrum {
+	top: calc(50% - -5.2%);
+    left: calc(50% - 20.8%);
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -4.4%);
+		left: calc(50% - 20.9%);
+	}
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -0.3%);
+		left: calc(50% - 12.1%);
+	}
+}
+
+#amanruya-resort-hotel {
+    top: calc(50% - -7%);
+    left: calc(50% - 22.5%);
+	z-index: 20 !important;
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - -6.2%);
+		left: calc(50% - 22.5%);
+	}
+	@media screen and (max-width: 768px) {
+		top: calc(50% - -2.2%);
+		left: calc(50% - 15.5%);
+	}
+}
+
+#six-senses-kaplankaya {
+	top: calc(50% - 1.5%);
+    left: calc(50% - 22.8%);
+
+	@media screen and (max-width: 1006px) {
+		top: calc(50% - 2.6%);
+		left: calc(50% - 23%);
+	}
+	@media screen and (max-width: 768px) {
+		top: calc(50% - 5.9%);
+		left: calc(50% - 16.6%);
+	}
+}

@@ -1,0 +1,9 @@
+.tooltip__ico {
+	background: url(../../../../../images/tooltip_active.png) no-repeat;
+	background-size: contain;
+	height: 12px;
+	width: 10px;
+	transition: 0.3s;
+	box-sizing: border-box;
+	pointer-events: all !important;
+}

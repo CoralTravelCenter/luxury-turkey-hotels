@@ -1,0 +1,10 @@
+.hotels__price-text {
+	@include price;
+	font-size: 5vh;
+	color: $white;
+    margin: 0 0 5px 0;
+	
+	@media screen and (max-width: 1006px) {
+		font-size: 5vw;
+	}
+}

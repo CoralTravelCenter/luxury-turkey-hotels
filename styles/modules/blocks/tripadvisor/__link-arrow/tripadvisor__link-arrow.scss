@@ -1,0 +1,13 @@
+.tripadvisor__link-arrow {
+    background: url(../../../../../images/link-arrow.png) no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 19px;
+    margin: 0 0 0 16px;
+
+    @media screen and (max-width: 768px) {
+		margin: 0 0 0 8px;
+        width: 5px;
+        height: 10px;
+	}
+}

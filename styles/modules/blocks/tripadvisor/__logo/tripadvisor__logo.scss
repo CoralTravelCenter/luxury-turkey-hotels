@@ -1,0 +1,13 @@
+.tripadvisor__logo {
+	background: url(../../../../../images/advisor.png) no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 15px;
+    margin: 0 16px 0 0;
+
+    @media screen and (max-width: 768px) {
+		margin: 0 8px 0 0;
+        width: 12px;
+        height: 7.5px;
+	}
+}

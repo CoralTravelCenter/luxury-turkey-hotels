@@ -1,0 +1,12 @@
+.hotels__title {
+	@include hotel-title;
+    font-size: 5vh;
+    line-height: 1.1;
+    color: $white;
+    margin: 0;
+    display: block !important;
+
+    @media screen and (max-width: 1006px) {
+        font-size: 5vw;
+    }
+}

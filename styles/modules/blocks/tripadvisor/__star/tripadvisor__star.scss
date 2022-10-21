@@ -1,0 +1,15 @@
+.tripadvisor__star {
+	border-radius: 50px;
+	width: 14px;
+	height: 14px;
+	background: url(../../../../../images/tripadvisor-full-rate.png) no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    margin: 0 8px 0 0;
+
+	@media screen and (max-width: 768px) {
+		width: 7px;
+		height: 7px;
+		margin: 0 4px 0 0;	
+	}
+}

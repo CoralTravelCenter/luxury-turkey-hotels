@@ -1,0 +1,19 @@
+.text-content_right {
+	align-self: flex-end;
+	background: linear-gradient(179.97deg, rgba(31, 31, 31, 0.44) 0.03%, rgba(0, 0, 0, 0.4) 105.62%);
+	padding: 20px;
+	min-height: 100%;
+	max-width: 750px;
+	width: 45vw;
+	z-index: 9;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@media screen and (max-width: 1006px) {
+		background: #565655;
+		width: 100%;
+		min-height: 45vh;
+		max-width: 100%;
+	}
+}

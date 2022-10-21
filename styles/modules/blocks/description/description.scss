@@ -1,0 +1,10 @@
+.description {
+	@include description;
+	color: $white;
+}
+
+.first .description {
+	@media screen and (max-width: 1006px) {
+		text-align: center;
+	}
+}

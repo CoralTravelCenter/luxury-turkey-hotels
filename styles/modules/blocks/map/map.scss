@@ -1,0 +1,25 @@
+.map {
+	margin: 0 0 126px 0;
+	position: relative;
+
+	@media screen and (max-width: 1006px) {
+		margin: 0 0 100px 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin: 0 0 50px 0;
+	}
+}
+
+.desktop {
+    display: block;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+.mobile {
+    display: none;
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
+}

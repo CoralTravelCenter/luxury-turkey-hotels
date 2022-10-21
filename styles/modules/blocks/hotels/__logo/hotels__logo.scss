@@ -1,0 +1,18 @@
+.hotels__logo {
+	margin: 0 0 20px 0;
+	width: 100%;
+	height: 30px;
+	object-fit: contain;
+
+	@media screen and (max-width: 1006px) {
+		height: 20px;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin: 0 0 10px 0;
+	}
+
+	@media screen and (max-width: 479px) {
+		height: 15px;
+	}
+}

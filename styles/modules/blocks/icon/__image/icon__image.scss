@@ -1,0 +1,11 @@
+.icon__image {
+	width: 54px;
+	height: 54px;
+	object-fit: contain;
+	margin: 0 0 12px 0;
+
+	@media screen and (max-width: 768px) {
+		width: calc(54px / 2);
+		height: calc(54px / 2);
+	}
+}

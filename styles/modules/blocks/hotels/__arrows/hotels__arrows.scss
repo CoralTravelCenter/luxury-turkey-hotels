@@ -1,0 +1,28 @@
+.hotels__arrows {
+	top: -30px;
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		color: $black;
+		z-index: 9;
+		outline: none;
+		border: none;
+
+		&:hover {
+			background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.swiper-button-next:after,
+		.swiper-button-prev:after {
+			font-size: 25px;
+		}
+
+		top: -13px;
+	}
+}

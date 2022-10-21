@@ -1,0 +1,15 @@
+.tripadvisor__link {
+	@include tripadvisor-reviews;
+	font-weight: 600;
+	text-decoration: none;
+	color: $white;
+	display: flex;
+	align-items: center;
+	transition: 0.3s;
+
+	&:hover {
+		transition: 0.3s;
+		opacity: 0.7;
+		color: $white !important;
+	}
+}

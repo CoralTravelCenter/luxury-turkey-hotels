@@ -1,0 +1,3175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Luxury hotels</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<style>
+			.sticky {
+				pointer-events: none !important;
+				visibility: hidden !important;
+				opacity: 0 !important;
+			}
+			.contentLayout-BaseContainer .notcritical .container {
+				margin: 0 !important;
+				padding: 0 !important;
+				max-width: unset !important;
+				overflow: hidden !important;
+			}
+			.notcritical {
+				padding-top: 0 !important;
+			}
+			.bcrumb {
+				display: none !important;
+			}
+			.subpage-search-bg > .background:before {
+				content: unset !important;
+			}
+
+			div.container-tabItemWrap .container-tabItem.activeTab {
+				position: absolute !important;
+			}
+
+			html {
+				line-height: 1.15; /* 1 */
+				-webkit-text-size-adjust: 100%; /* 2 */
+			}
+			body {
+				margin: 0;
+			}
+			main {
+				display: block;
+			}
+			h1 {
+				font-size: 2em;
+				margin: 0.67em 0;
+				display: none !important;
+			}
+			hr {
+				box-sizing: content-box; /* 1 */
+				height: 0; /* 1 */
+				overflow: visible; /* 2 */
+			}
+			pre {
+				font-family: monospace, monospace; /* 1 */
+				font-size: 1em; /* 2 */
+			}
+			a {
+				background-color: transparent;
+			}
+			abbr[title] {
+				border-bottom: none; /* 1 */
+				text-decoration: underline; /* 2 */
+				-webkit-text-decoration: underline dotted;
+				text-decoration: underline dotted; /* 2 */
+			}
+			b,
+			strong {
+				font-weight: bolder;
+			}
+			code,
+			kbd,
+			samp {
+				font-family: monospace, monospace; /* 1 */
+				font-size: 1em; /* 2 */
+			}
+			small {
+				font-size: 80%;
+			}
+			sub,
+			sup {
+				font-size: 75%;
+				line-height: 0;
+				position: relative;
+				vertical-align: baseline;
+			}
+
+			sub {
+				bottom: -0.25em;
+			}
+
+			sup {
+				top: -0.5em;
+			}
+			img {
+				border-style: none;
+			}
+			button,
+			input,
+			optgroup,
+			select,
+			textarea {
+				font-family: inherit; /* 1 */
+				font-size: 100%; /* 1 */
+				line-height: 1.15; /* 1 */
+				margin: 0; /* 2 */
+			}
+			button,
+			input {
+				/* 1 */
+				overflow: visible;
+			}
+			button,
+			select {
+				/* 1 */
+				text-transform: none;
+			}
+			button,
+			[type="button"],
+			[type="reset"],
+			[type="submit"] {
+				-webkit-appearance: button;
+			}
+			button::-moz-focus-inner,
+			[type="button"]::-moz-focus-inner,
+			[type="reset"]::-moz-focus-inner,
+			[type="submit"]::-moz-focus-inner {
+				border-style: none;
+				padding: 0;
+			}
+			button:-moz-focusring,
+			[type="button"]:-moz-focusring,
+			[type="reset"]:-moz-focusring,
+			[type="submit"]:-moz-focusring {
+				outline: 1px dotted ButtonText;
+			}
+			fieldset {
+				padding: 0.35em 0.75em 0.625em;
+			}
+			legend {
+				box-sizing: border-box; /* 1 */
+				color: inherit; /* 2 */
+				display: table; /* 1 */
+				max-width: 100%; /* 1 */
+				padding: 0; /* 3 */
+				white-space: normal; /* 1 */
+			}
+			progress {
+				vertical-align: baseline;
+			}
+			textarea {
+				overflow: auto;
+			}
+			[type="checkbox"],
+			[type="radio"] {
+				box-sizing: border-box; /* 1 */
+				padding: 0; /* 2 */
+			}
+			[type="number"]::-webkit-inner-spin-button,
+			[type="number"]::-webkit-outer-spin-button {
+				height: auto;
+			}
+			[type="search"] {
+				-webkit-appearance: textfield; /* 1 */
+				outline-offset: -2px; /* 2 */
+			}
+			[type="search"]::-webkit-search-decoration {
+				-webkit-appearance: none;
+			}
+			::-webkit-file-upload-button {
+				-webkit-appearance: button; /* 1 */
+				font: inherit; /* 2 */
+			}
+			details {
+				display: block;
+			}
+			summary {
+				display: list-item;
+			}
+			template {
+				display: none;
+			}
+			[hidden] {
+				display: none;
+			}
+
+			@font-face {
+				src: url(vendor/fonts/museosanscyrl-500-webfont.woff);
+				font-weight: 500;
+			}
+			@font-face {
+				src: url(vendor/fonts/museosanscyrl-700-webfont.woff);
+				font-weight: 700;
+			}
+			@font-face {
+				src: url(vendor/fonts/museosanscyrl-900-webfont.woff);
+				font-weight: 900;
+			}
+			h1,
+			h2,
+			h3,
+			p,
+			span {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			.exclusive-hotels {
+				width: 100%;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+
+			.wrapper {
+				width: 1370px;
+				height: 100%;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				position: relative;
+			}
+			@media screen and (max-width: 1439px) {
+				.wrapper {
+					width: calc(100% - 40px);
+				}
+			}
+			@media screen and (max-width: 1199px) {
+				.wrapper {
+					width: calc(100% - 40px);
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.wrapper {
+					width: 100%;
+				}
+				.hotels__slide .wrapper {
+					order: 1;
+				}
+			}
+
+			.wrapper_absolute {
+				position: absolute !important;
+				width: calc(100% - 200px) !important;
+				right: 5vw;
+			}
+			@media screen and (max-width: 1006px) {
+				.wrapper_absolute {
+					position: relative !important;
+					width: 100% !important;
+					right: unset;
+				}
+			}
+
+			.first {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/banner.jpg) no-repeat;
+				background-size: cover;
+				width: 100%;
+				height: 724px;
+				margin: 0 0 100px 0;
+			}
+			@media screen and (max-width: 768px) {
+				.first {
+					height: calc(100vh - 141px);
+					background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/banner_mobile.png) no-repeat;
+					background-size: cover;
+					margin: 0 0 50px 0;
+					background-position: bottom;
+				}
+			}
+
+			.title {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 54px;
+				line-height: 1.2;
+				margin: 0;
+				max-width: 550px;
+				margin-bottom: 25px;
+				color: #fff;
+			}
+			.title span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.title {
+					font-size: 34px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.title {
+					font-size: 26px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.title {
+					max-width: 100%;
+					margin: 0 auto 25px auto !important;
+					text-align: center;
+				}
+			}
+
+			.title_additional {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 48px;
+				line-height: 1.2;
+				text-align: center;
+				letter-spacing: 0.01em;
+				margin: 0;
+				color: #0e0e2c;
+				margin: 0 0 60px 0;
+			}
+			@media screen and (max-width: 768px) {
+				.title_additional {
+					font-size: 30px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.title_additional {
+					font-size: 24px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.title_additional {
+					margin: 0 0 55px 0;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.title_additional {
+					margin: 0 0 30px 0;
+				}
+			}
+
+			.description {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				margin: 0;
+				color: #fff;
+			}
+			.description span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.description {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.description {
+					font-size: 14px;
+				}
+			}
+
+			@media screen and (max-width: 1006px) {
+				.first .description {
+					text-align: center;
+				}
+			}
+
+			.description_min {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				margin: 0;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 1.2;
+				text-align: center;
+			}
+			.description_min span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.description_min {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.description_min {
+					font-size: 14px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.description_min {
+					font-size: 12px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.description_min {
+					font-size: 10px;
+				}
+			}
+
+			.subtitle {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 36px;
+				line-height: 1.2;
+				margin: 0;
+				color: #fff;
+				margin-bottom: 35px;
+			}
+			@media screen and (max-width: 768px) {
+				.subtitle {
+					font-size: 25px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.subtitle {
+					font-size: 20px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.subtitle {
+					margin: 0 auto 35px auto;
+					text-align: center;
+				}
+			}
+
+			.text-content {
+				-webkit-backdrop-filter: blur(24px);
+				backdrop-filter: blur(24px);
+				padding: 200px 75px 0 75px;
+				height: 100%;
+				min-height: 100%;
+				width: 750px;
+				box-sizing: border-box;
+				color: white;
+				background: linear-gradient(180deg, #accdeb 0%, rgba(86, 86, 85, 0) 100%);
+			}
+			@media screen and (max-width: 1006px) {
+				.text-content {
+					align-self: center;
+					height: -webkit-fit-content;
+					height: -moz-fit-content;
+					height: fit-content;
+					min-height: unset;
+					padding: 200px 45px 86px 45px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.text-content {
+					width: calc(100% - 40px);
+					padding: 75px 20px 42px 20px;
+				}
+			}
+
+			.text-content_right {
+				align-self: flex-end;
+				background: linear-gradient(179.97deg, rgba(31, 31, 31, 0.44) 0.03%, rgba(0, 0, 0, 0.4) 105.62%);
+				padding: 20px;
+				min-height: 100%;
+				max-width: 750px;
+				width: 45vw;
+				z-index: 9;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			@media screen and (max-width: 1006px) {
+				.text-content_right {
+					background: #565655;
+					width: 100%;
+					min-height: 45vh;
+					max-width: 100%;
+				}
+			}
+
+			.wrapper {
+				width: 1370px;
+				height: 100%;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				position: relative;
+			}
+			@media screen and (max-width: 1439px) {
+				.wrapper {
+					width: calc(100% - 40px);
+				}
+			}
+			@media screen and (max-width: 1199px) {
+				.wrapper {
+					width: calc(100% - 40px);
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.wrapper {
+					width: 100%;
+				}
+				.hotels__slide .wrapper {
+					order: 1;
+				}
+			}
+
+			.icons {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				row-gap: 60px;
+				-moz-column-gap: 72px;
+				column-gap: 72px;
+				padding: 0;
+				margin: 0 0 100px 0;
+			}
+			@media screen and (max-width: 1199px) {
+				.icons {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.icons {
+					-moz-column-gap: 32px;
+					column-gap: 32px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.icons {
+					-moz-column-gap: 16px;
+					column-gap: 16px;
+					row-gap: 30px;
+					margin: 0 0 50px 0;
+				}
+			}
+
+			.icon {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			@media screen and (max-width: 1199px) {
+				.icon {
+					max-width: 30%;
+					width: 100%;
+				}
+			}
+			.icon::before,
+			.icon::after {
+				content: none !important;
+			}
+
+			.icon__image {
+				width: 54px;
+				height: 54px;
+				-o-object-fit: contain;
+				object-fit: contain;
+				margin: 0 0 12px 0;
+			}
+			@media screen and (max-width: 768px) {
+				.icon__image {
+					width: 27px;
+					height: 27px;
+				}
+			}
+
+			.hotels {
+				overflow: hidden;
+				margin: 0 0 100px 0;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels {
+					margin: 0 0 50px 0;
+				}
+			}
+
+			.hotels__slider {
+				margin: 0 0 28px 0;
+			}
+
+			.hotels__video {
+				position: absolute;
+				width: 150%;
+				height: 150%;
+				left: -25%;
+				top: -25%;
+				pointer-events: none;
+			}
+			@media screen and (max-width: 1199px) {
+				.hotels__video {
+					height: 200%;
+					width: 200%;
+					top: -50%;
+					left: -50%;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__video {
+					height: unset;
+					width: unset;
+					transform: scale(172%);
+					left: unset;
+					top: 45vh;
+					max-height: 45vh;
+				}
+			}
+
+			.hotels__video-cover {
+				position: relative;
+				width: 100%;
+				max-height: 85vh;
+				opacity: 1;
+				transition: 3s;
+				pointer-events: auto;
+				min-height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+				-o-object-position: center;
+				object-position: center;
+				z-index: 8;
+			}
+			.hotels__video-cover_hidden {
+				pointer-events: none;
+				opacity: 0;
+				transition: 2s;
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__video-cover {
+					order: 2;
+					max-height: 40vh;
+				}
+			}
+
+			.hotels__slide {
+				position: relative;
+				width: 100%;
+				min-height: 100%;
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.hotels__burger {
+				width: 5vh;
+				height: 5vh;
+				border-radius: 50px;
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				z-index: 3;
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/burger.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				border: none;
+				transition: 0.3s;
+				cursor: pointer;
+				outline: none !important;
+			}
+			.hotels__burger:hover {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/burger_hover.png);
+				transition: 0.3s;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__burger {
+					width: 27px;
+					height: 27px;
+				}
+			}
+
+			.hotels__stars {
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+			}
+
+			.hotels__star {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/star.png) no-repeat;
+				background-size: contain;
+				width: 3vh;
+				height: 3vh;
+				margin: 0 8px 0 0;
+			}
+			.hotels__star:last-of-type {
+				margin: 0;
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__star {
+					width: 3vw;
+					height: 3vw;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__star {
+					width: 12px;
+					height: 12px;
+				}
+			}
+
+			.hotels__title {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 48px;
+				line-height: 1.2;
+				text-align: center;
+				letter-spacing: 0.01em;
+				margin: 0;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-size: 5vh;
+				line-height: 1.1;
+				color: #fff;
+				margin: 0;
+				display: block !important;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__title {
+					font-size: 30px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.hotels__title {
+					font-size: 24px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__title {
+					font-size: 5vw;
+				}
+			}
+
+			.hotels__location {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__location {
+					max-width: 80%;
+					width: 100%;
+					margin: 0 auto;
+				}
+			}
+
+			.hotels__location-ico {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/hotels-location.png) no-repeat;
+				background-size: contain;
+				width: 15px;
+				height: 19px;
+				margin: 0 8px 0 0;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__location-ico {
+					width: 12px;
+					height: 17px;
+				}
+			}
+
+			.hotels__location-text {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				margin: 0;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 1.2;
+				font-size: 2vh;
+			}
+			.hotels__location-text span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__location-text {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.hotels__location-text {
+					font-size: 14px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__location-text {
+					font-size: 12px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.hotels__location-text {
+					font-size: 10px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__location-text {
+					font-size: 2vw;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__location-text {
+					max-width: -webkit-fit-content;
+					max-width: -moz-fit-content;
+					max-width: fit-content;
+				}
+			}
+			@media screen and (max-width: 479px) {
+				.hotels__location-text {
+					font-size: 3vw;
+				}
+			}
+
+			.hotels__description {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				margin: 0;
+				font-size: 2.5vh;
+				margin: 0 auto 0 auto;
+				text-align: center;
+				max-width: 90%;
+			}
+			.hotels__description span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__description {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.hotels__description {
+					font-size: 14px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__description {
+					font-size: 2.5vw;
+				}
+			}
+			@media screen and (max-width: 479px) {
+				.hotels__description {
+					font-size: 3vw;
+				}
+			}
+
+			.hotels__price {
+				margin: 0 auto 0 auto;
+				max-width: 80%;
+			}
+
+			.hotels__price-text {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 44px;
+				line-height: 1.2;
+				text-align: center;
+				font-size: 5vh;
+				color: #fff;
+				margin: 0 0 5px 0;
+			}
+			.hotels__price-text span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__price-text {
+					font-size: 22px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__price-text {
+					font-size: 5vw;
+				}
+			}
+
+			.hotels__tourists {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 1.2;
+				text-align: center;
+				font-size: 3vh;
+				margin: 0;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__tourists {
+					font-size: 12px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__tourists {
+					font-size: 3vh;
+				}
+			}
+
+			.hotels__button-wrapper {
+				display: flex;
+				justify-content: center;
+			}
+
+			.hotels__button {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/button.png) no-repeat;
+				background-size: cover;
+				background-position: center;
+				border-radius: 8px;
+				border: none;
+				height: 5vh;
+				width: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #fff;
+				text-decoration: none;
+
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				margin: 0;
+				font-weight: 600;
+				transition: 0.3s;
+				margin: 0;
+			}
+			.hotels__button span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__button {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.hotels__button {
+					font-size: 14px;
+				}
+			}
+			.hotels__button:hover {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/button_hover.png) no-repeat;
+				background-size: 110%;
+				transition: 0.3s;
+				color: #fff !important;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__button {
+					width: 70%;
+					height: 25px;
+				}
+			}
+
+			.hotels__logos {
+				flex-direction: row;
+				justify-content: space-between;
+				overflow: hidden;
+				width: 1270px;
+			}
+			@media screen and (max-width: 1439px) {
+				.hotels__logos {
+					max-width: calc(100% - 100px);
+				}
+			}
+
+			.hotels__logo-wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transition: 0.3s;
+				cursor: pointer;
+			}
+			.hotels__logo-wrapper:hover {
+				transition: 0.3s;
+				opacity: 0.7;
+			}
+
+			.hotels__logo {
+				margin: 0 0 20px 0;
+				width: 100%;
+				height: 30px;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+			@media screen and (max-width: 1006px) {
+				.hotels__logo {
+					height: 20px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__logo {
+					margin: 0 0 10px 0;
+				}
+			}
+			@media screen and (max-width: 479px) {
+				.hotels__logo {
+					height: 15px;
+				}
+			}
+
+			.hotels__logo-underline {
+				opacity: 0;
+				visibility: hidden;
+				transition: 0.3s;
+				background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+				height: 3px;
+				width: 50%;
+			}
+
+			.swiper-slide-active .hotels__logo-underline {
+				opacity: 1;
+				visibility: visible;
+				transition: 0.3s;
+			}
+
+			.hotels__arrows {
+				top: -30px;
+			}
+			.hotels__arrows .swiper-button-next,
+			.hotels__arrows .swiper-button-prev {
+				color: #0e0e2c;
+				z-index: 9;
+				outline: none;
+				border: none;
+			}
+			.hotels__arrows .swiper-button-next:hover,
+			.hotels__arrows .swiper-button-prev:hover {
+				background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__arrows {
+					top: -13px;
+				}
+				.hotels__arrows .swiper-button-next:after,
+				.hotels__arrows .swiper-button-prev:after {
+					font-size: 25px;
+				}
+			}
+
+			@media screen and (max-width: 1006px) {
+				.hotels__slide_no-video {
+					overflow: visible;
+				}
+				.hotels__slide_no-video .hotels__video-cover {
+					top: 95%;
+					bottom: unset;
+					min-height: 100%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.hotels__slide_no-video .hotels__video-cover {
+					min-height: 70%;
+				}
+			}
+			@media screen and (max-width: 429px) {
+				.hotels__slide_no-video .hotels__video-cover {
+					min-height: 60%;
+				}
+			}
+
+			.submenu {
+				position: absolute;
+				background: #fff;
+				top: 20px;
+				right: 20px;
+				visibility: hidden;
+				opacity: 0;
+				pointer-events: none;
+				padding: 28px 46px 38px 46px;
+				transition: 0.3s;
+				z-index: 4;
+				border-radius: 2.6vh;
+				max-height: 70vh;
+				height: 50vh;
+				overflow: hidden;
+			}
+			.submenu::after {
+				content: "";
+				background: linear-gradient(0deg, #fff, transparent);
+				position: absolute;
+				bottom: 0;
+				height: 90px;
+				z-index: 5;
+				width: 100%;
+				left: 0;
+				pointer-events: none;
+			}
+			@media screen and (max-width: 1006px) {
+				.submenu {
+					padding: 40px 46px 44px 46px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.submenu {
+					padding: 20px 23px 0 23px;
+					border-radius: 17px;
+					max-width: calc(100% - 90px);
+				}
+			}
+
+			.submenu_opened {
+				visibility: visible;
+				opacity: 1;
+				pointer-events: auto;
+				transition: 0.3s;
+			}
+
+			.submenu__close-button {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/close-btn.png) no-repeat;
+				background-size: contain;
+				width: 5vh;
+				height: 5vh;
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 3;
+				cursor: pointer;
+				border: none;
+				border-radius: 50px;
+				transition: 0.3s;
+				outline: none !important;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.submenu__close-button:hover {
+				transition: 0.3s;
+				opacity: 0.7;
+			}
+			@media screen and (max-width: 768px) {
+				.submenu__close-button {
+					width: 28px;
+					height: 28px;
+				}
+			}
+
+			.submenu__title {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				margin: 0;
+				font-weight: 600;
+				margin: 0 auto 30px auto;
+				max-width: calc(100% - 120px);
+				text-align: center;
+				transition: 0.3s;
+			}
+			.submenu__title span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.submenu__title {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.submenu__title {
+					font-size: 14px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.submenu__title {
+					max-width: 90%;
+				}
+			}
+
+			.submenu__navlist {
+				padding: 0;
+				list-style: none;
+				overflow: scroll;
+				height: calc(50vh - 48px);
+				margin: 0;
+			}
+			.submenu__navlist::-webkit-scrollbar {
+				background: #fff;
+				width: 3px;
+			}
+			.submenu__navlist::-webkit-scrollbar-thumb {
+				background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+				width: 3px;
+			}
+
+			.submenu__navitem {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				margin: 0;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 1.2;
+				margin: 0 0 14px 0;
+				font-weight: 600;
+				cursor: pointer;
+				background: #0e0e2c;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+			.submenu__navitem span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.submenu__navitem {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.submenu__navitem {
+					font-size: 14px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.submenu__navitem {
+					font-size: 12px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.submenu__navitem {
+					font-size: 10px;
+				}
+			}
+			.submenu__navitem:last-of-type {
+				margin: 0 0 50px 0;
+			}
+			.submenu__navitem:hover {
+				transition: 0.3s;
+				background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+
+			.tripadvisor {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.tripadvisor__logo {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/advisor.png) no-repeat;
+				background-size: contain;
+				width: 24px;
+				height: 15px;
+				margin: 0 16px 0 0;
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__logo {
+					margin: 0 8px 0 0;
+					width: 12px;
+					height: 7.5px;
+				}
+			}
+
+			.tripadvisor__rating {
+				display: flex;
+				align-items: center;
+				margin: 0 16px 0 0;
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__rating {
+					margin: 0 8px 0 0;
+				}
+			}
+
+			.tripadvisor__rating-text {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				margin: 0;
+				font-weight: 600;
+				color: #34e0a1;
+				margin: 0 8px 0 0;
+			}
+			.tripadvisor__rating-text span {
+				font-weight: 700;
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__rating-text {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.tripadvisor__rating-text {
+					font-size: 14px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__rating-text {
+					margin: 0 4px 0 0;
+				}
+			}
+
+			.tripadvisor__star {
+				border-radius: 50px;
+				width: 14px;
+				height: 14px;
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/tripadvisor-full-rate.png) no-repeat;
+				background-size: contain;
+				box-sizing: border-box;
+				margin: 0 8px 0 0;
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__star {
+					width: 7px;
+					height: 7px;
+					margin: 0 4px 0 0;
+				}
+			}
+
+			.tripadvisor__star_half {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/tripadvisor-half-rate.png) no-repeat;
+				background-size: contain;
+			}
+
+			.tripadvisor__reviews-count {
+				font-style: normal;
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 1.2;
+				margin: 0 16px 0 0;
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__reviews-count {
+					font-size: 12px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.tripadvisor__reviews-count {
+					font-size: 10px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__reviews-count {
+					margin: 0 8px 0 0;
+				}
+			}
+
+			.tripadvisor__link {
+				font-style: normal;
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 1.2;
+				font-weight: 600;
+				text-decoration: none;
+				color: #fff;
+				display: flex;
+				align-items: center;
+				transition: 0.3s;
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__link {
+					font-size: 12px;
+				}
+			}
+			@media screen and (max-width: 499px) {
+				.tripadvisor__link {
+					font-size: 10px;
+				}
+			}
+			.tripadvisor__link:hover {
+				transition: 0.3s;
+				opacity: 0.7;
+				color: #fff !important;
+			}
+
+			.tripadvisor__link-arrow {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/link-arrow.png) no-repeat;
+				background-size: contain;
+				width: 10px;
+				height: 19px;
+				margin: 0 0 0 16px;
+			}
+			@media screen and (max-width: 768px) {
+				.tripadvisor__link-arrow {
+					margin: 0 0 0 8px;
+					width: 5px;
+					height: 10px;
+				}
+			}
+
+			.map {
+				margin: 0 0 126px 0;
+				position: relative;
+			}
+			@media screen and (max-width: 1006px) {
+				.map {
+					margin: 0 0 100px 0;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.map {
+					margin: 0 0 50px 0;
+				}
+			}
+
+			.desktop {
+				display: block;
+			}
+			@media screen and (max-width: 768px) {
+				.desktop {
+					display: none;
+				}
+			}
+
+			.mobile {
+				display: none;
+			}
+			@media screen and (max-width: 768px) {
+				.mobile {
+					display: block;
+				}
+			}
+
+			.tooltip {
+				position: absolute !important;
+				cursor: pointer;
+				display: flex !important;
+				flex-direction: column-reverse;
+				align-items: center;
+				justify-content: flex-end;
+				pointer-events: none;
+				opacity: 1 !important;
+				font-size: unset !important;
+				text-align: unset !important;
+				font-weight: unset !important;
+				font-style: unset !important;
+				text-decoration: unset !important;
+				text-shadow: unset !important;
+				letter-spacing: unset !important;
+				word-break: unset !important;
+				word-spacing: unset !important;
+				white-space: unset !important;
+				line-break: unset !important;
+				word-wrap: unset !important;
+				z-index: 9 !important;
+				line-height: unset !important;
+			}
+
+			#cape-bodrum-luxury-hotel-beach-bodrum {
+				top: 54.7%;
+				left: 26.1%;
+			}
+			@media screen and (max-width: 1006px) {
+				#cape-bodrum-luxury-hotel-beach-bodrum {
+					top: 53.7%;
+					left: 25.9%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#cape-bodrum-luxury-hotel-beach-bodrum {
+					top: 50%;
+					left: 31.3%;
+				}
+			}
+
+			#caja-by-maxx-royal-bodrum {
+				top: 54.9%;
+				left: 26.6%;
+			}
+			@media screen and (max-width: 1006px) {
+				#caja-by-maxx-royal-bodrum {
+					top: 54.2%;
+					left: 26.4%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#caja-by-maxx-royal-bodrum {
+					top: 50.4%;
+					left: 32.2%;
+				}
+			}
+
+			#hilton-dalaman-sarigerme-resort-spa-dalaman {
+				top: 73.8%;
+				left: 45.4%;
+			}
+			@media screen and (max-width: 1006px) {
+				#hilton-dalaman-sarigerme-resort-spa-dalaman {
+					top: 73.1%;
+					left: 45.3%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#hilton-dalaman-sarigerme-resort-spa-dalaman {
+					top: 67.4%;
+					left: 71.4%;
+				}
+			}
+
+			#mandarin-oriental-bodrum {
+				top: 55.9%;
+				left: 27.3%;
+				z-index: 20 !important;
+			}
+			@media screen and (max-width: 1006px) {
+				#mandarin-oriental-bodrum {
+					top: 55.1%;
+					left: 27.1%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#mandarin-oriental-bodrum {
+					top: 51.2%;
+					left: 33.8%;
+				}
+			}
+
+			#kempinski-hotel-barbaros-bay-bodrum {
+				top: 61.5%;
+				left: 28.4%;
+				z-index: 23 !important;
+			}
+			@media screen and (max-width: 1006px) {
+				#kempinski-hotel-barbaros-bay-bodrum {
+					top: 60.8%;
+					left: 28.4%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#kempinski-hotel-barbaros-bay-bodrum {
+					top: 56.2%;
+					left: 36.1%;
+				}
+			}
+
+			#doora-bodrum-hotel {
+				top: 57.7%;
+				left: 28.2%;
+				z-index: 21 !important;
+			}
+			@media screen and (max-width: 1006px) {
+				#doora-bodrum-hotel {
+					top: 57.3%;
+					left: 27.9%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#doora-bodrum-hotel {
+					top: 53%;
+					left: 35.6%;
+				}
+			}
+
+			#mivara-luxury-resort-spa-bodrum {
+				top: 55.7%;
+				left: 26.8%;
+			}
+			@media screen and (max-width: 1006px) {
+				#mivara-luxury-resort-spa-bodrum {
+					top: 54.9%;
+					left: 26.7%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#mivara-luxury-resort-spa-bodrum {
+					top: 50.7%;
+					left: 32.9%;
+				}
+			}
+
+			#le-meridien-bodrum-beach-resort {
+				top: 54.1%;
+				left: 28.9%;
+			}
+			@media screen and (max-width: 1006px) {
+				#le-meridien-bodrum-beach-resort {
+					top: 53.1%;
+					left: 28.9%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#le-meridien-bodrum-beach-resort {
+					top: 49.5%;
+					left: 37.3%;
+				}
+			}
+
+			#xanadu-island-hotel {
+				top: 62.5%;
+				left: 25.5%;
+				z-index: 23 !important;
+			}
+			@media screen and (max-width: 1006px) {
+				#xanadu-island-hotel {
+					top: 61.6%;
+					left: 25.4%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#xanadu-island-hotel {
+					top: 57.2%;
+					left: 30.3%;
+				}
+			}
+
+			#be-premium-bodrum {
+				top: 56.7%;
+				left: 28.7%;
+				z-index: 20 !important;
+			}
+			@media screen and (max-width: 1006px) {
+				#be-premium-bodrum {
+					top: 56.5%;
+					left: 28.7%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#be-premium-bodrum {
+					top: 52.1%;
+					left: 36.3%;
+				}
+			}
+
+			#kaya-palazzo-resort-residence {
+				top: 60.2%;
+				left: 27.3%;
+				z-index: 22 !important;
+			}
+			@media screen and (max-width: 1006px) {
+				#kaya-palazzo-resort-residence {
+					top: 59.7%;
+					left: 27.3%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#kaya-palazzo-resort-residence {
+					top: 55%;
+					left: 33.7%;
+				}
+			}
+
+			#lujo-hotel-bodrum {
+				top: 55.2%;
+				left: 29.2%;
+			}
+			@media screen and (max-width: 1006px) {
+				#lujo-hotel-bodrum {
+					top: 54.4%;
+					left: 29.1%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#lujo-hotel-bodrum {
+					top: 50.3%;
+					left: 37.9%;
+				}
+			}
+
+			#amanruya-resort-hotel {
+				top: 57%;
+				left: 27.5%;
+				z-index: 20 !important;
+			}
+			@media screen and (max-width: 1006px) {
+				#amanruya-resort-hotel {
+					top: 56.2%;
+					left: 27.5%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#amanruya-resort-hotel {
+					top: 52.2%;
+					left: 34.5%;
+				}
+			}
+
+			#six-senses-kaplankaya {
+				top: 48.5%;
+				left: 27.2%;
+			}
+			@media screen and (max-width: 1006px) {
+				#six-senses-kaplankaya {
+					top: 47.4%;
+					left: 27%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#six-senses-kaplankaya {
+					top: 44.1%;
+					left: 33.4%;
+				}
+			}
+
+			.tooltip__ico {
+				background: url(https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/tooltip_active.png) no-repeat;
+				background-size: contain;
+				height: 12px;
+				width: 10px;
+				transition: 0.3s;
+				box-sizing: border-box;
+				pointer-events: all !important;
+			}
+
+			.tooltip__name {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 1.2;
+				text-align: center;
+				color: #0e0e2c;
+				padding: 6px 12px;
+				background: #fff;
+				margin: 0;
+				visibility: hidden;
+				opacity: 0;
+				pointer-events: none;
+				transition: 0.3s;
+				min-width: -webkit-max-content;
+				min-width: -moz-max-content;
+				min-width: max-content;
+				transform: translateY(4px);
+				border-radius: 6px;
+				max-height: 0;
+				pointer-events: none;
+				position: absolute;
+				transform: translateY(-25px);
+			}
+			@media screen and (max-width: 499px) {
+				.tooltip__name {
+					font-size: 10px;
+				}
+			}
+
+			.tooltip__ico:hover ~ .tooltip__name {
+				transition: 0.3s;
+				pointer-events: auto;
+				opacity: 1;
+				visibility: visible;
+				max-height: unset;
+			}
+
+			.advantages_max {
+				background: #f2f7fc;
+				padding: 80px 0 100px 0;
+				margin: 0 0 90px 0;
+			}
+			.advantages_max .icons {
+				grid-template-columns: repeat(6, 1fr);
+				-moz-column-gap: 24px;
+				column-gap: 24px;
+				margin: 0;
+			}
+			@media screen and (max-width: 768px) {
+				.advantages_max .icons {
+					-moz-column-gap: 6px;
+					column-gap: 6px;
+					margin: 0 0 50px 0;
+				}
+			}
+			.advantages_max .icon__image {
+				width: 100px;
+				height: 100px;
+			}
+			@media screen and (max-width: 768px) {
+				.advantages_max .icon__image {
+					width: 50px;
+					height: 50px;
+				}
+			}
+			.advantages_max .title_additional {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 1.2;
+				text-align: center;
+				letter-spacing: 0.01em;
+			}
+			@media screen and (max-width: 768px) {
+				.advantages_max .title_additional {
+					font-size: 16px;
+				}
+			}
+			@media screen and (max-width: 1006px) {
+				.advantages_max {
+					padding: 65px 0 80px 0;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.advantages_max {
+					padding: 32px 0 40px 0;
+				}
+			}
+
+			.footer {
+				display: flex;
+				margin: 0 auto 80px auto;
+				max-width: 1182px;
+				justify-content: space-between;
+			}
+
+			.footer__left {
+				width: calc(50% - 21px);
+				margin: 0 20px 0 0;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.footer__center {
+				background: #000;
+				width: 1px;
+				height: 200px;
+			}
+
+			.footer__right {
+				width: calc(50% - 61px);
+				margin: 0 0 0 60px;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.footer__title {
+				margin: 0 0 23px 0;
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 38px;
+			}
+
+			.footer__description {
+				margin: 0 0 30px 0;
+				font-weight: 300;
+				font-size: 24px;
+				line-height: 29px;
+			}
+
+			.footer__description_right {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 18px;
+			}
+			.footer__description_right a {
+				color: #000;
+			}
+
+			.footer__social-wrapper {
+				display: flex;
+				justify-content: space-between;
+				width: 475px;
+			}
+
+			.footer__phone {
+				color: #ffae00 !important;
+				font-size: 56px !important;
+				font-weight: 500 !important;
+				line-height: 66px !important;
+				margin: 0 0 36px;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+
+			@media screen and (max-width: 1439px) {
+				.footer {
+					max-width: calc(100% - 256px);
+				}
+				.footer__social-wrapper {
+					max-width: 350px;
+				}
+				.footer__social-ico {
+					max-width: 60px;
+				}
+			}
+			@media screen and (max-width: 1199px) {
+				.footer {
+					max-width: calc(100% - 200px);
+				}
+				.footer__right {
+					max-width: calc(50% - 21px);
+					margin: 0 0 0 20px;
+				}
+				.footer__title {
+					font-size: 28px;
+				}
+				.footer__phone {
+					font-size: 26px !important;
+					line-height: 1.2 !important;
+				}
+				.footer__description {
+					font-size: 20px;
+				}
+				.footer__description_right {
+					max-width: 330px;
+					font-size: 16px;
+				}
+				.footer__social-wrapper {
+					max-width: 250px;
+				}
+				.footer__social-ico {
+					max-width: 40px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				.footer {
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					max-width: calc(100% - 30px);
+				}
+				.footer__center {
+					display: none;
+				}
+				.footer__left {
+					margin: 0 auto 120px auto;
+					width: 100%;
+					align-items: center;
+				}
+				.footer__right {
+					margin: 0 auto;
+					width: 100%;
+					max-width: 100%;
+					align-items: center;
+				}
+				.footer__title {
+					font-size: 42px;
+					line-height: 50px;
+				}
+				.footer__description_right {
+					max-width: 100%;
+				}
+			}
+			@media screen and (max-width: 480px) {
+				.footer__left {
+					margin: 0 auto 80px auto;
+				}
+				.footer__title {
+					font-size: 32px;
+					line-height: 1.2;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="exclusive-hotels">
+			<section class="first">
+				<div class="wrapper">
+					<div class="text-content">
+						<h1 class="title">Позволь себе <span>больше привилегий</span></h1>
+						<p class="subtitle">в&nbsp;отелях Эгейского побережья</p>
+						<p class="description">Элитный отдых в&nbsp;Турции&nbsp;&mdash; это роскошные отели, где все детали продуманы до&nbsp;мелочей, безупречный сервис обслуживания и&nbsp;уникальные развлечения, способные удивить даже самого взыскательного туриста.</p>
+						<p class="description"><span>Почувствуйте себя особенным!</span></p>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="wrapper">
+					<h2 class="title_additional">Преимущества отдыха в&nbsp;первоклассных отелях Эгейского побережья</h2>
+					<ul class="icons">
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico1.png" alt="Изысканные номера" class="icon__image" />
+							<p class="description_min">Изысканные номера</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico2.png" alt="Рестораны а-ля карт" class="icon__image" />
+							<p class="description_min">Рестораны а-ля карт</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico3.png" alt="Большая зеленая территория" class="icon__image" />
+							<p class="description_min">Большая зеленая территория</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico4.png" alt="Уникальная архитектура" class="icon__image" />
+							<p class="description_min">Уникальная архитектура</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico5.png" alt="Развлечения для всей семьи" class="icon__image" />
+							<p class="description_min">Развлечения для всей семьи</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico6.png" alt="Эксклюзивные привилегии" class="icon__image" />
+							<p class="description_min">Эксклюзивные привилегии</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico7.png" alt="Первая береговая линия" class="icon__image" />
+							<p class="description_min">Первая береговая линия</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico8.png" alt="Удобное расположение" class="icon__image" />
+							<p class="description_min">Удобное расположение</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico9.png" alt="Шикарные пейзажи" class="icon__image" />
+							<p class="description_min">Шикарные пейзажи</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/ico10.png" alt="Превосходный спа-центр" class="icon__image" />
+							<p class="description_min">Превосходный спа-центр</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="hotels">
+				<div class="wrapper wrapper_absolute">
+					<button class="hotels__burger" aria-label="все отели" type="menu"></button>
+					<div class="submenu">
+						<button class="submenu__close-button">&nbsp;</button>
+						<p class="submenu__title">Элитные отели Эгейского побережья</p>
+						<ul class="submenu__navlist">
+							<li class="submenu__navitem" id="0">XANADU ISLAND HOTEL</li>
+							<li class="submenu__navitem" id="1">CAJA BY MAXX ROYAL</li>
+							<li class="submenu__navitem" id="2">HILTON DALAMAN SARIGERME RESORT&nbsp;&&nbsp;SPA</li>
+							<li class="submenu__navitem" id="3">MANDARIN ORIENTAL BODRUM</li>
+							<li class="submenu__navitem" id="4">KEMPINSKI HOTEL BARBAROS BAY BODRUM</li>
+							<li class="submenu__navitem" id="5">DOORA BODRUM HOTEL</li>
+							<li class="submenu__navitem" id="6">MIVARA LUXURY RESORT&nbsp;&&nbsp;SPA BODRUM</li>
+							<li class="submenu__navitem" id="7">LE&nbsp;MERIDIEN BODRUM BEACH RESORT</li>
+							<li class="submenu__navitem" id="8">CAPE BODRUM LUXURY HOTEL&nbsp;&&nbsp;BEACH</li>
+							<li class="submenu__navitem" id="9">BE PREMIUM BODRUM</li>
+							<!-- HOTELS 16.08 -->
+							<li class="submenu__navitem" id="10">KAYA PALAZZO RESORT&nbsp;&&nbsp;RESIDENCE</li>
+							<li class="submenu__navitem" id="11">LUJO HOTEL BODRUM</li>
+							<li class="submenu__navitem" id="12">AMANRUYA RESORT HOTEL</li>
+							<li class="submenu__navitem" id="13">SIX SENSES KAPLANKAYA</li>
+							<!-- HOTELS 18.08 -->
+							<li class="submenu__navitem" id="14">CLUB MARVY</li>
+							<li class="submenu__navitem" id="15">HILLSIDE BEACH CLUB</li>
+							<li class="submenu__navitem" id="16">BIBLOS RESORT ALACATI</li>
+						</ul>
+					</div>
+				</div>
+				<div class="hotels__slider swiper">
+					<div class="swiper-wrapper">
+						<div class="hotels__slide swiper-slide" id="0">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/xanadu.jpg" alt="Xanadu Island Hotel" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/738235917?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">XANADU ISLAND HOTEL</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гюверджинлик (Guvercinlik)</p>
+									</div>
+									<p class="hotels__description">Изысканный Xanadu Island Hotel 5*&nbsp;расположен на&nbsp;частном полуострове среди благоухающих садов и&nbsp;живописных цветочных двориков, холмов и&nbsp;пальм. Из&nbsp;всех номеров открывается живописный вид на&nbsp;море. <span>Подарите себе и&nbsp;своим детям незабываемый отдых!</span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>173&nbsp;354&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/xanadu-island-hotel-bodrum/?q=%7B%22Bgn%22%3A%2215.10.2022%22%2C%22End%22%3A%2215.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22XUbhbS%2BvqjgEDyh2pzOIODFJapzwPK6iDdo9oSylrDMUZxFh6s0QAkqW0clLenoj%2Bn%2FhyuJfwgPM1d5CH9ijqqFxZgW%2BTnj9gQ%2FLa6Hm2zbOrR8y9OlqJPpjNY%2FkuFFrgrG63EmYm5hcJJVgbqLMaJTmdXvxJO60MxjhcT8EB0s%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Afalse%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">1508&nbsp;отзывов</p>
+										<a href="/hotels/turkey/xanadu-island-hotel-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="1">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/caja.jpg" alt="Caja By Maxx Royal" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/737491528?h=b5f043a04c&amp;badge=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;autopause=0&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">Caja By Maxx Royal</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гельтюркбюку (Golturkbuku)</p>
+									</div>
+									<p class="hotels__description">Роскошный Caja By&nbsp;Maxx Royal 5*&nbsp;находится на&nbsp;берегу Эгейского побережья, в&nbsp;живописном городе Бодрум. Комфортабельные резиденции, изысканные блюда и&nbsp;эксклюзивные привилегии. Здесь каждый гость почувствует себя особенным!</p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>361&nbsp;576&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/caja-by-maxx-royal-bodrum/?q=%7B%22Bgn%22%3A%2223.09.2022%22%2C%22End%22%3A%2223.09.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22F%2Bhn5At1%2BnfLgCxQWFA0t2vxw7aiwHzyOyn2eZOvtfBk3RRrBPmatSmpBUSnEMYipSxB%2BwWhYvOJ6JZfRPhVmvuq130h2074o9MYxTRZ1zRtqw86mwpEd2QDUyMHbakeGnMDwL24VH6cA8K0Tq9pD4LKlkVa8Ym1PIfsvcnqXMk%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Atrue%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor" style="opacity: 0; pointer-events: none">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">3&nbsp;622&nbsp;отзыва</p>
+										<a href="/hotels/turkey/cape-bodrum-luxury-hotel-beach-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="2">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/hilton.jpg" alt="Hilton Dalaman Sarigerme Resort & Spa" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/737491469?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">Hilton Dalaman Sarigerme Resort&nbsp;&&nbsp;Spa</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гюндуан (Gundogan)</p>
+									</div>
+									<p class="hotels__description">Элитный Hilton Dalaman Sarigerme Resort &amp;&nbsp;Spa расположился среди живописных гор, на&nbsp;лазурном берегу, в&nbsp;Даламане. Элегантно оформленные номера, шикарные обеденные залы, безупречное обслуживание и&nbsp;большой аквапарк ждут гостей!</p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>203&nbsp;215&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/hilton-dalaman-sarigerme-resort-spa-dalaman/?q=%7B%22Bgn%22%3A%2214.10.2022%22%2C%22End%22%3A%2214.10.2022%22%2C%22Dr%22%3A%227%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22G9NuoHpBfsa2gsLZo%2BwJKi6UjBXPsT%2FhfGv0yvqJYHVAUL%2FHkJv0TqD1WqF8aT28yQj2fHsQ1n0wbpGUsNDel7mCRBBVdX0kuNsR3XkLqB%2BUeYZgEGs90lcfBv09rzw4Ref7zjP3klAG%2FvxSL37v3bSamzZWJcGkMUVGYuv5sAm3%2BxD5RMG%2Fl4r%2FHD5ziD7S%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Afalse%2C%22Rglr%22%3Afalse%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">6&nbsp;044&nbsp;отзыва</p>
+										<a href="/hotels/turkey/hilton-dalaman-sarigerme-resort-spa-dalaman/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="3">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/mandarin.jpg" alt="Mandarin Oriental Bodrum" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/737491440?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">Mandarin Oriental Bodrum</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гельтюркбюку (Golturkbuku)</p>
+									</div>
+									<p class="hotels__description">Превосходный Mandarin Oriental Bodrum 5*&nbsp;расположился на&nbsp;берегу Райского залива, в&nbsp;городе Бодрум. Два частных пляжа и&nbsp;великолепные условия для отдыха понравятся даже самому требовательному гостю. Погрузитесь с&nbsp;головой в&nbsp;эксклюзивный отдых всей семьей!</p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>427&nbsp;993&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/mandarin-oriental-bodrum-bodrum/?q=%7B%22Bgn%22%3A%2215.10.2022%22%2C%22End%22%3A%2215.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22sVoaS7h%2FEZzW6kjdVTFVECx14DvhMmtvolakYNhvkszmcUqHGW0tTZphdmHKmSR%2BhnNnM3QaLcFC8wFx0JPWfOXCxhPU%2FwVyKc%2FkkNZ1p2RolKrPQyM3VPsH4o3SaUqgMfUuLqM4abc6w2jxx1yOV6H2wS2TEeEZ9znFaFaASdM%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Atrue%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">602&nbsp;отзыва</p>
+										<a href="/hotels/turkey/cape-bodrum-luxury-hotel-beach-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="4">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/kempinski.jpg" alt="KEMPINSKI HOTEL BARBAROS BAY BODRUM" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/738235818?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">KEMPINSKI HOTEL BARBAROS BAY BODRUM</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Ялычифтлик (Yaliciftlik)</p>
+									</div>
+									<p class="hotels__description">Шикарный Kempinski Hotel Barbaros Bay Bodrum 5* расположен на&nbsp;утесах живописной бухты Barbaros Bay. Частный песчаный пляж, бассейн с&nbsp;эффектом бесконечности, уникальное спа и&nbsp;множество непревзойденных ресторанов. <span>Ощутите европейский шик!</span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>212&nbsp;494&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/kempinski-hotel-barbaros-bay-bodrum-bodrum/?q=%7B%22Bgn%22%3A%2215.10.2022%22%2C%22End%22%3A%2215.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22WOgF4Ta4DdBE5zqq76LJA9iLGRRa4Od1j0Vl9%2FCUuKKkq9TtWSG0dgtkiOz8XQbHSo7ZauAcdnhZVbLZ7A8ZXAF462217z%2BSrRURWgHYkXXC6Luh5OobFRz6p2uh7JqBRXj2rXQE4fuI7R8XYQRczA7FuER2WfFr4HhC5pP3861AoEtPv%2Bfr%2FsiAigA8Q7mL%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Atrue%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">883&nbsp;отзыва</p>
+										<a href="/hotels/turkey/kempinski-hotel-barbaros-bay-bodrum-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="5">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/doora.jpg" alt="DOORA BODRUM HOTEL" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/738235864?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">DOORA BODRUM HOTEL</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum)</p>
+									</div>
+									<p class="hotels__description">Живописный отель Doora Bodrum Hotel 5*&nbsp;расположен в&nbsp;городе Бодрум. Дизайнерские номера, эксклюзивные привилегии, высокий уровень обслуживания, превосходный спа. <span>Наслаждайтесь роскошным отдыхом!</span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>134&nbsp;324&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/doora-bodrum-hotel-bodrum/?q=%7B%22Bgn%22%3A%2228.09.2022%22%2C%22End%22%3A%2228.09.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22oV0AN3j99TZYDrZuPF91J94fJJPYGl6necGr6OEtx3QCG74C3QHeSQAOu9lQQZC%2FMGyFkPcxUXshVa04ZzwcnVqggFNFugavdPP3xlOsyRu%2FLc%2BifEpQtTLkq9bHsMYRlrxnT4akgkZjRPi5ne27TF2UxmkLSUlsp8lMuXBSxYQ%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Afalse%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="6">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/mivara.jpg" alt="MIVARA LUXURY RESORT & SPA BODRUM" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/738235841?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">MIVARA LUXURY RESORT & SPA BODRUM</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гюндуан (Gundogan)</p>
+									</div>
+									<p class="hotels__description">Роскошный спа-отель Mivara Luxury Resort &amp;&nbsp;Spa Bodrum 5*&nbsp;находится в&nbsp;поселке Гюндоган, недалеко от&nbsp;яхт-центра. Дизайнерские номера с&nbsp;потрясающими видами, пляж с&nbsp;белоснежным песком, косметические и&nbsp;оздоровительные процедуры. <span>Вас ждет уникальный отдых!</span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>161&nbsp;470&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/mivara-luxury-resort-spa-bodrum-bodrum/?q=%7B%22Bgn%22%3A%2215.10.2022%22%2C%22End%22%3A%2215.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22Am0FWM%2BgXNRdngSVkqPcp8YemuWXePuYsR%2F%2FaLUM6siRkXVVyD7n1COq6OOKDqgmxIvC1BkGTNgz6eaotxW62%2FurkDZUWmGmQOLOpePLMc9d82qZaSYMdqxCmdWwWqGIHHAsImK0MHrRLdkMt%2FTjjROJlE49J07%2BnzQiw0tJPYcnRt70OUxEHjS37z9cVl9f%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Afalse%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">490&nbsp;отзыва</p>
+										<a href="/hotels/turkey/mivara-luxury-resort-spa-bodrum-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="7">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/le_meridien.jpg" alt="LE MERIDIEN BODRUM BEACH RESORT" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/738235792?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">LE MERIDIEN BODRUM BEACH RESORT</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гюверджинлик (Guvercinlik)</p>
+									</div>
+									<p class="hotels__description">Элитный Le&nbsp;Meridien Bodrum Beach Resort 5*&nbsp;отличается великолепным расположением и&nbsp;панорамными видами на&nbsp;Эгейское море. Высококлассное обслуживание и&nbsp;комфорт в&nbsp;сочетании с&nbsp;атмосферой полной релаксации будут оценены самыми взыскательными гостями. <span>Вас ждет незабываемый отдых!</span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>161&nbsp;470&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/le-meridien-bodrum-beach-resort-bodrum/?q=%7B%22Bgn%22%3A%2206.10.2022%22%2C%22End%22%3A%2206.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22KF3PYTCa6nlvy90iIgPD0EoSE%2BwF7rCDqAlyBmjAuiNaUGXo3tzExWeDAUNzixB%2BEKl6SX5Ony96B%2B9OkJwUsf5%2F07amN4jQn%2BfnAL4sDu2gw8uNxHErTlvOAAYwTxYDjPFXBp0pDqpBn%2B0nNREVoOzYxpUB003LuX9zboJ7%2FzY%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Afalse%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">291&nbsp;отзыв</p>
+										<a href="/hotels/turkey/le-meridien-bodrum-beach-resort-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="8">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/cape.jpg" alt="CAPE BODRUM LUXURY BEACH & HOTEL" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/737491499?h=b5f043a04c&amp;badge=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;autopause=0&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">CAPE BODRUM LUXURY BEACH&nbsp;&&nbsp;HOTEL</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гюндуан (Gundogan)</p>
+									</div>
+									<p class="hotels__description">Безупречный Cape&nbsp;Bodrum&nbsp;Luxury&nbsp;Beach&nbsp;&amp;&nbsp;Hotel&nbsp;4* находится на&nbsp;побережье Средиземного и&nbsp;Эгейского морей. Из&nbsp;номеров и&nbsp;сьютов открываются потрясающие пейзажи. Туристы превосходно отдохнут в&nbsp;окружении великолепной природы Бодрума!</p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>224&nbsp;799&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/cape-bodrum-luxury-hotel-beach-bodrum/?q=%7B%22Bgn%22%3A%2215.10.2022%22%2C%22End%22%3A%2215.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22rbO4zLZkILSaIMvEWbE3w%2F%2B4D20gsKvxVYZEoUkgi7DuiTbN7V%2FNYSyt%2Bpf%2Bbfx8%2BkzmVgQPhaDe%2B0xTpdq9eiD8xdSM69SLCiDIUPo2onI4RVpCJ%2FxL2WTiaNZ49%2FxnEpRE4DFpNOrBx7kgDYvZ8ALhdMWCPPr1yoEr%2BN%2BA4f7fYt3tk7PXrAE6J9piftxl%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Afalse%2C%22Rglr%22%3Afalse%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">3&nbsp;622&nbsp;отзыва</p>
+										<a href="/hotels/turkey/cape-bodrum-luxury-hotel-beach-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="9">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/be_premium.jpg" alt="BE PREMIUM BODRUM" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/738235900?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">BE PREMIUM BODRUM</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Кайнар (Kaynar)</p>
+									</div>
+									<p class="hotels__description">Элегантный be&nbsp;Premium Bodrum 5*&nbsp;находится на&nbsp;первой береговой линии в&nbsp;поселке Торба, недалеко от&nbsp;Бодрума. Эксклюзивные услуги, превосходный спа-центр, уютные номера, широкий выбор ресторанов и&nbsp;баров. <span>Превратите ваш отдых в&nbsp;мечту!</span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>181&nbsp;454&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/be-premium-bodrum-bodrum/?q=%7B%22Bgn%22%3A%2206.10.2022%22%2C%22End%22%3A%2206.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22BjnAqyIEx82M%2FEQqUzGnpo9FEy9eqkj5QCxeBBAwGjBIUB0feDspEgOYDzAkx1AbGk51m3V1ZTkX0sAjta0cmA2%2FVp%2FyOUZ4H1uX43RPjYucmNPShaxiAIvHKxWxDRKrm%2B7%2BYxU3fSgy9%2FY4uKG5wqPeHyzi3Hai1PA9QotWU%2Fo%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Afalse%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">1382&nbsp;отзыва</p>
+										<a href="/hotels/turkey/be-premium-bodrum-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide hotels__slide_no-video swiper-slide" id="10">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/kaya_cover.jpg" alt="KAYA PALAZZO RESORT &RESIDENCE" class="hotels__video-cover" />
+							<div class="hotels__video hotels__video-fake">&nbsp;</div>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">KAYA PALAZZO RESORT&nbsp;&&nbsp;RESIDENCE</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гюмбет (Gumbet)</p>
+									</div>
+									<p class="hotels__description">Шикарный Kaya Palazzo Resort &amp;&nbsp;Residence 5*&nbsp;находится в&nbsp;городе Бодрум, недалеко от&nbsp;пляжа Гюмбет. Оригинальная архитектура, высокий уровень сервиса, великолепная природа, блюда мировой кухни&nbsp;&mdash; все это выводит отдых на&nbsp;новый уровень. Здесь понравится даже самого взыскательному туристу!</p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>188&nbsp;821&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/kaya-palazzo-resort-residence-bodrum/?q=%7B%22Bgn%22%3A%2206.10.2022%22%2C%22End%22%3A%2206.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22nSXjnXOsc%2BS41cPL36Ffg7oUjVgOHOaw2FvP%2Fg96N4RZCfLuEA5Xhjso7qfD%2BKpR1m22ofCu%2FllQrT8OVLIzbz1wQ0%2Bb1EGRwu5oLuTounN6xhw4RORfebMoVHvdkliNF0Be4qVdE3FoDjZAW8jurEXlZ8QCIBHkvr4E%2BYqBVNxWNgZUvYLEodDEDQqOq%2Fb%2B%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Afalse%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">107&nbsp;отзывов</p>
+										<a href="/hotels/turkey/kaya-palazzo-resort-residence-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="11">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/lujo_cover.jpg" alt="LUJO HOTEL BODRUM" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/740025849?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">LUJO HOTEL BODRUM</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum)</p>
+									</div>
+									<p class="hotels__description">Роскошный Lujo Hotel Bodrum 5*&nbsp;расположен на&nbsp;берегу живописного Эгейского побережья. Безупречный сервис обслуживания, широкий выбор ресторанов и&nbsp;баров, яркая анимационная программа. Воплотите ваши мечты об&nbsp;идеальном отпуске!</p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>351&nbsp;140&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/lujo-hotel-bodrum-bodrum/?q=%7B%22Bgn%22%3A%2215.10.2022%22%2C%22End%22%3A%2215.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22nkrY3aiQq5Q9OgY1%2FCFUWVtSqVYzkKK4eUuWZZ6tUjLd9%2B%2BCIBGuUypK%2F8khlBKPFQsKZKOU0Ayi1M03pqk%2FPeo%2F9F7FCA0cQTRAF1bh%2BZR1KbxBjvTUrc%2B0aws%2FKftFNHGfuxBU2DU4KVMpD%2FGY5eGXPrFVilKIi7pk1kVRVwA%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Atrue%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">1829&nbsp;отзывов</p>
+										<a href="/hotels/turkey/lujo-hotel-bodrum-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="12">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/amanruya_cover.jpg" alt="AMANRUYA RESORT HOTEL" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/740026083?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">&nbsp;</div>
+									<h3 class="hotels__title">AMANRUYA RESORT HOTEL</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum)</p>
+									</div>
+									<p class="hotels__description">Комфортабельный Amanruya Resort Hotel 5* в&nbsp;стиле традиционной турецкой деревни расположился на&nbsp;склонах живописного холма. Частные коттеджи с&nbsp;садом и&nbsp;бассейнами, живописный сосновый лес, первоклассный сервис, изысканная кухня, эксклюзивные спа-услуги. Уединение и&nbsp;роскошь ждут вас!</p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>488&nbsp;677&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/amanruya-resort-hotel-bodrum/?q=%7B%22Bgn%22%3A%2228.09.2022%22%2C%22End%22%3A%2228.09.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22SASV5l%2BLyrbSzYW6meql%2BeOcsbMzQMn2okEPsdKMSLh8P3fFMnLOxOkEg27Hmnrtyk1fRhl9QyseuV%2FSch7z42wSw3psixOssvC%2Ffh3PV5ogHLODgVRUjOumOSDMcDW09yE5WL%2B7vbGQtDvKBPnXAeGYbd5klDDt5mAsO%2F7LF0E%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Atrue%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">86&nbsp;отзывов</p>
+										<a href="/hotels/turkeyamanruya-resort-hotel-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="13">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/six_sences_cover.jpg" alt="SIX SENSES KAPLANKAYA" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/740026017?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">SIX SENSES KAPLANKAYA</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Бодрум (Bodrum), Гюмбет (Gumbet)</p>
+									</div>
+									<p class="hotels__description">Ультрамодный Six Senses Kaplankaya 5*&nbsp;идеально вписан в&nbsp;окружающий ландшафт Эгейского побережья Бодрума. Уединенные пляжи, безупречное обслуживание и&nbsp;эксклюзивные привилегии. Окунитесь с&nbsp;головой в&nbsp;мир роскоши!</p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>243&nbsp;068&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/six-senses-kaplankaya-bodrum/?q=%7B%22Bgn%22%3A%2203.10.2022%22%2C%22End%22%3A%2203.10.2022%22%2C%22Dr%22%3A%220%22%2C%22Acc%22%3A%227%22%2C%22Gest%22%3A%222%22%2C%22Q%22%3A%22nIhjcvpuo449pR98Ywc8G3QLrEl%2Fkq9irns3bnkLT8eF2cS9NeQDnUGoEAMQYSfZI2ME%2FKwBTlj%2FX7sH2X9zWoBnZpCRImbXGXzaIlXCuP2aaz%2FAzKrGYqb2Kk1apkMgNo7lY2R9VgzFJMt%2BQ7LHoPMSmrQfhA1mt7LM7dBQJCg%3D%22%2C%22Ts%22%3A0%2C%22Las%22%3Afalse%2C%22AcId%22%3A0%2C%22FDate%22%3A%220001-01-01T00%3A00%3A00Z%22%2C%22Ref%22%3Afalse%2C%22Pstatus%22%3Afalse%2C%22TransferPrice%22%3A0%2C%22Chr%22%3Atrue%2C%22Rglr%22%3Atrue%2C%22Srt%22%3A1%7D"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">221&nbsp;отзыв</p>
+										<a href="/hotels/six-senses-kaplankaya-bodrum/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="14">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/marvy.jpg" alt="CLUB MARVY" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/740667792?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">CLUB MARVY</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Оздере (Ozdere)</p>
+									</div>
+									<p class="hotels__description">Восхитительный Club Marvy 5*&nbsp;находится в&nbsp;живописном городе Оздере, на&nbsp;первой береговой линии Эгейского побережья. Для создания отеля были использованы только натуральные материалы. Большая зеленая территория, превосходное спа с&nbsp;видом на&nbsp;море, большой аквапарк, изысканные блюда. <span>Вас ждет роскошь в&nbsp;простоте! </span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>319&nbsp;237&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/club-marvy-ozdere/?q=%7b%22Bgn%22%3a%2212.09.2022%22%2c%22End%22%3a%2218.09.2022%22%2c%22Dr%22%3a%223%22%2c%22Acc%22%3a%227%22%2c%22Gest%22%3a%222%22%2c%22Q%22%3a%22163f5fst0QjDVYmaDh131LnUI40Airp9nrG1xYysIe8Yrd9qCjf%2flpW1xM4w7vyxnWQPSwO0tFp%2bX3ci37XDdq6rnakZTKViVDAaSAk9wwwJHQXQNC7c%2btrvIzJOa9iuJNMJqK7U2x2YUiSW6SxPNQ%3d%3d%22%2c%22Ts%22%3a0%2c%22Las%22%3afalse%2c%22AcId%22%3a0%2c%22FDate%22%3a%220001-01-01T00%3a00%3a00Z%22%2c%22Ref%22%3afalse%2c%22Pstatus%22%3afalse%2c%22TransferPrice%22%3a0.0%2c%22Chr%22%3atrue%2c%22Rglr%22%3afalse%2c%22Srt%22%3a1%7d"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">1831&nbsp;отзыв</p>
+										<a href="/hotels/club-marvy-ozdere/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="15">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/hillside.jpg" alt="HILLSIDE BEACH CLUB" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/740667660?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">HILLSIDE BEACH CLUB</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Фетхие (Fethiye)</p>
+									</div>
+									<p class="hotels__description">Великолепный Hillside Beach Club 5*&nbsp;расположился в&nbsp;Фетхие, в&nbsp;живописной бухте среди природы Эгейского моря. Три пляжа, большая зеленая территория, комфортабельные номера, природный спа, открытый бассейн с&nbsp;водными горками. <span>Здесь вы&nbsp;почувствуете единение с&nbsp;природой!</span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>279&nbsp;989&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/hillside-beach-club-fethiye/?q=%7b%22Bgn%22%3a%2206.10.2022%22%2c%22End%22%3a%2212.10.2022%22%2c%22Dr%22%3a%223%22%2c%22Acc%22%3a%227%22%2c%22Gest%22%3a%222%22%2c%22Q%22%3a%22xhV33Een9A6ni5hHCeXLhm%2fVhpDiEG8z9WC9mLoxGvUC0zILLj314A%2fzZx0TSU9OUFrSMC1t8E28p4MPcCCvPZD3CSdSeg%2fcGf%2bIx9ceI%2b%2bU0G5RG5DyiXKC4hFWA0DAH9%2fFUpxY4wYy6WMLbEiRHs4LdowqjybyYmAj2qOJoBc%3d%22%2c%22Ts%22%3a0%2c%22Las%22%3afalse%2c%22AcId%22%3a0%2c%22FDate%22%3a%220001-01-01T00%3a00%3a00Z%22%2c%22Ref%22%3afalse%2c%22Pstatus%22%3afalse%2c%22TransferPrice%22%3a0.0%2c%22Chr%22%3atrue%2c%22Rglr%22%3afalse%2c%22Srt%22%3a1%7d"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">1601&nbsp;отзыв</p>
+										<a href="/hotels/hillside-beach-club-fethiye/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotels__slide swiper-slide" id="16">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/biblos.jpg" alt="BIBLOS RESORT ALACATI" class="hotels__video-cover" />
+							<iframe title="02.mp4" src="https://player.vimeo.com/video/740667524?h=b5f043a04c&amp;badge=0&amp;autopause=0&amp;background=1&amp;autoplay=0&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen" class="hotels__video"></iframe>
+							<div class="wrapper wrapper_absolute">
+								<div class="text-content text-content_right">
+									<div class="hotels__stars">
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+										<div class="hotels__star">&nbsp;</div>
+									</div>
+									<h3 class="hotels__title">BIBLOS RESORT ALACATI</h3>
+									<div class="hotels__location">
+										<div class="hotels__location-ico">&nbsp;</div>
+										<p class="hotels__location-text">Чешме (Cesme), Алачати (Alacati)</p>
+									</div>
+									<p class="hotels__description">Превосходный Biblos Resort Alacati 5*&nbsp;расположен в&nbsp;поселке Алачаты, в&nbsp;одной из&nbsp;немногих бухт, подходящих для серфинга. Изыскано оформленные номера, услуги консьержа, большая спа зона, развлечения для взрослых и&nbsp;детей. <span>Здесь исполняются мечты!</span></p>
+									<div class="hotels__price">
+										<p class="hotels__price-text">от&nbsp;<span>278&nbsp;627&nbsp;₽</span></p>
+										<p class="hotels__tourists">на&nbsp;2&nbsp;чел&nbsp;/ 7&nbsp;ночей</p>
+									</div>
+									<div class="hotels__button-wrapper">
+										<a
+											href="/hotels/turkey/biblos-resort-alacati-cesme/?q=%7b%22Bgn%22%3a%2203.09.2022%22%2c%22End%22%3a%2209.09.2022%22%2c%22Dr%22%3a%223%22%2c%22Acc%22%3a%227%22%2c%22Gest%22%3a%222%22%2c%22Q%22%3a%22a3SXJAXtoDORADEuaEESbn2RP8Q35YgDHw3CXjzQGmFy2TVlIPE5bN58UxUJnGr1KigQr5yTHJjBC4JDwcPL0ELyPtYTGnZ7aYjMPq8NIZpEMqfrCPGooIsnBE0WNXRbD3h8UYJORidgbFvCfEvf7V0kqbEj%2fUa2w7ZoK0rZgmo%3d%22%2c%22Ts%22%3a0%2c%22Las%22%3afalse%2c%22AcId%22%3a0%2c%22FDate%22%3a%220001-01-01T00%3a00%3a00Z%22%2c%22Ref%22%3afalse%2c%22Pstatus%22%3afalse%2c%22TransferPrice%22%3a0.0%2c%22Chr%22%3atrue%2c%22Rglr%22%3afalse%2c%22Srt%22%3a1%7d"
+											class="hotels__button"
+											target="_blank"
+										>
+											Выбрать номер
+										</a>
+									</div>
+									<!-- <div class="tripadvisor">
+										<div class="tripadvisor__logo">&nbsp;</div>
+										<div class="tripadvisor__rating">
+											<p class="tripadvisor__rating-text">4.5</p>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star">&nbsp;</div>
+											<div class="tripadvisor__star tripadvisor__star_half">&nbsp;</div>
+										</div>
+										<p class="tripadvisor__reviews-count">1601&nbsp;отзыв</p>
+										<a href="/hotels/hillside-beach-club-fethiye/#ta-comments" class="tripadvisor__link">
+											Читать все
+											<div class="tripadvisor__link-arrow">&nbsp;</div>
+										</a>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper hotels__logos">
+					<div class="swiper-wrapper">
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo9.png" alt="XANADU ISLAND HOTEL" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo2.png" alt="Caja By Maxx Royal" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo3.png" alt="Hilton Dalaman Sarigerme Resort & Spa" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo4.png" alt="Mandarin Oriental Bodrum" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo5.png" alt="KEMPINSKI HOTEL BARBAROS BAY BODRUM" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo6.png" alt="DOORA BODRUM HOTEL" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo7.png" alt="MIVARA LUXURY RESORT & SPA BODRUM" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo8.png" alt="LE MERIDIEN BODRUM BEACH RESORT" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo1.png" alt="CAPE BODRUM LUXURY BEACH & HOTEL" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo10.png" alt="BE PREMIUM BODRUM" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<!-- HOTELS 16.08 -->
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo-kaya.png" alt="KAYA PALAZZO RESORT &RESIDENCE" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo-lujo.png" alt="LUJO HOTEL BODRUM" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo-amanruya.png" alt="AMANRUYA RESORT HOTEL" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo-six-senses.png" alt="SIX SENSES KAPLANKAYA" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<!-- HOTELS 18.08 -->
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo-marvy.png" alt="CLUB MARVY" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo-hillside.png" alt="HILLSIDE BEACH CLUB" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+						<div class="hotels__logo-wrapper swiper-slide">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/logo-biblos.png" alt="BIBLOS RESORT ALACATI" class="hotels__logo" />
+							<span class="hotels__logo-underline">&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div class="hotels__arrows wrapper">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</section>
+			<section class="advantages advantages_max">
+				<div class="wrapper">
+					<h2 class="title_additional">Почему выбирают Coral Travel</h2>
+					<ul class="icons">
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/benefit1.png" alt="Изысканные номера" class="icon__image" />
+							<p class="description_min">Концепции отдыха с&nbsp;детьми</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/benefit2.png" alt="Рестораны а-ля карт" class="icon__image" />
+							<p class="description_min">Круглосуточное бронирование</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/benefit3.png" alt="Большая зеленая территория" class="icon__image" />
+							<p class="description_min">Удобство и&nbsp;безопасность оплаты</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/benefit4.png" alt="Уникальная архитектура" class="icon__image" />
+							<p class="description_min">Акции и&nbsp;программы лояльности</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/benefit5.png" alt="Развлечения для всей семьи" class="icon__image" />
+							<p class="description_min">Мобильный помощник</p>
+						</li>
+						<li class="icon">
+							<img src="https://cdn.coral.ru/content/cms/russia/luxury-hotels-turkey/benefit6.png" alt="Развлечения для всей семьи" class="icon__image" />
+							<p class="description_min">Элитный отдых в&nbsp;Турции</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="footer">
+				<div class="footer__left">
+					<p class="footer__title">Не знаете, что&nbsp;выбрать?</p>
+					<p class="footer__description">Пишите в&nbsp; чат &mdash;&nbsp;мы на связи!</p>
+					<div class="footer__social-wrapper">
+						<a href="https://wa.me/74952321206?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!" class="footer__social">
+							<img src="https://cdn.coral.ru/content/cms/russia/exclisive-rest/whatsapp.png" alt="whatsapp" class="footer__social-ico" />
+						</a>
+						<a href="https://vk.me/coraltravel" class="footer__social">
+							<img src="https://cdn.coral.ru/content/cms/russia/exclisive-rest/vk.png" alt="vkontakte" class="footer__social-ico" />
+						</a>
+						<a href="https://t.me/coraltravel_telegrambot" class="footer__social">
+							<img src="https://cdn.coral.ru/content/cms/russia/exclisive-rest/tg.png" alt="telegram" class="footer__social-ico" />
+						</a>
+						<a href="https://bcrw.apple.com/urn:biz:d3809fd0-e2fe-4027-b27e-ae34bf28e38c" class="footer__social">
+							<img src="https://cdn.coral.ru/content/cms/russia/exclisive-rest/apple.png" alt="apple" class="footer__social-ico" />
+						</a>
+					</div>
+				</div>
+				<div class="footer__center"></div>
+				<div class="footer__right">
+					<p class="footer__title">Удобнее по&nbsp;телефону?</p>
+					<a class="footer__phone" href="tel:+74952321206">+7 (495) 232 12&nbsp;06</a>
+					<p class="footer__description footer__description_right">По&nbsp;заявкам, забронированным онлайн на&nbsp;сайте <a href="/">Coral.ru</a></p>
+				</div>
+			</section>
+		</div>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			const page = document.querySelector(".exclusive-hotels");
+			const submenu = page.querySelector(".submenu");
+			const closeButton = submenu.querySelector(".submenu__close-button");
+			const menuButton = page.querySelector(".hotels__burger");
+			const submenuItems = submenu.querySelectorAll(".submenu__navitem");
+			const sliderContainer = page.querySelector(".hotels");
+			let slideID, firstSlideID;
+
+			const hotels = new Swiper(".hotels__slider", {
+				autoplay: {
+					delay: 3e4,
+				},
+				slidesPerView: 1,
+				centeredSlides: true,
+				spaceBetween: 0,
+				loop: true,
+				loopedSlides: 17,
+			});
+
+			const hotelsLogos = new Swiper(".hotels__logos", {
+				slidesPerView: 3,
+				loopedSlides: 17,
+				centeredSlides: false,
+				loop: true,
+				slideToClickedSlide: true,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				breakpoints: {
+					769: {
+						slidesPerView: 5,
+					},
+					1399: {
+						slidesPerView: 7,
+					},
+				},
+			});
+
+			const slides = sliderContainer.querySelectorAll(".hotels__slide");
+			const hotelsLogosImgs = sliderContainer.querySelectorAll(".hotels__logo-wrapper");
+
+			menuButton.addEventListener("click", () => {
+				openMenu();
+				ym(553380, "reachGoal", "menu");
+			});
+
+			closeButton.addEventListener("click", closeMenu);
+
+			hotelsLogosImgs.forEach((logo) => {
+				const logoAlt = logo.querySelector(".hotels__logo").alt;
+				logo.addEventListener("click", () => {
+					ym(553380, "reachGoal", "logo", { hotel_name_luxury_logo: `${logoAlt.toLowerCase()}` });
+				});
+			});
+			slides.forEach((slide) => {
+				const slideBtn = slide.querySelector(".hotels__button");
+				const slideTitle = slide.querySelector(".hotels__title");
+				slideBtn.addEventListener("click", () => {
+					ym(553380, "reachGoal", "choosenumber", { hotel_name_luxury_chooserum: `${slideTitle.textContent.toLowerCase()}` });
+				});
+			});
+
+			hotels.controller.control = hotelsLogos;
+			hotelsLogos.controller.control = hotels;
+
+			function openMenu() {
+				submenu.classList.add("submenu_opened");
+				document.addEventListener("scroll", scrollHandler);
+			}
+
+			function closeMenu() {
+				submenu.classList.remove("submenu_opened");
+				document.removeEventListener("scroll", scrollHandler);
+			}
+
+			function scrollHandler() {
+				if (submenu.classList.contains("submenu_opened")) {
+					closeMenu();
+				}
+			}
+
+			const videos = page.querySelectorAll(".hotels__video");
+			const players = [];
+
+			videos.forEach((video) => {
+				if (video.classList.contains("hotels__video-fake")) {
+					players.push(video);
+				} else {
+					players.push(new Vimeo.Player(video));
+				}
+			});
+
+			submenuItems.forEach((item) => {
+				item.addEventListener("click", () => {
+					hotels.slideToLoop(Number(item.id), 1000, false);
+					initSlideID();
+					removeCover(players[slideID]);
+					closeMenu();
+					ym(553380, "reachGoal", "menu1", { hotel_name_luxury_menu: `${item.textContent.toLowerCase()}` });
+				});
+			});
+
+			function initSlideID() {
+				hotels.updateActiveIndex();
+				slideID = hotels.activeIndex;
+				if (slideID < 0) {
+					slideID = 0;
+				}
+			}
+			function removeCover(player) {
+				if (!player.element) {
+					console.log(`No video to play on slide ${slideID}`);
+					return;
+				}
+				if (player.element.dataset.ready) {
+					player.play();
+					console.log(`Command to play video from ${slideID} slide`);
+					videos[slideID].previousElementSibling.classList.add("hotels__video-cover_hidden");
+					console.log(`Video started. Remove cover from ${slideID} slide`);
+				} else {
+					player.play();
+					console.log(`Command to play video from ${slideID} slide`);
+					player.on("bufferstart", () => {
+						console.log(`Video from ${slideID} slide is buffering...`);
+						player.on("bufferend", () => {
+							console.log(`Video from ${slideID} slide has buffered`);
+							player.getPaused().then((paused) => {
+								if (!paused) {
+									console.log(`Video started. Remove cover from ${slideID} slide`);
+									videos[slideID].previousElementSibling.classList.add("hotels__video-cover_hidden");
+								}
+							});
+						});
+					});
+				}
+			}
+
+			function pauseVideo(player) {
+				if (!player.element) {
+					console.log(`No video to pause on slide ${slideID}`);
+					return;
+				}
+				player.pause();
+				console.log(`Command to pause video from ${slideID} slide`);
+				player.getPaused().then((paused) => {
+					if (paused) {
+						videos[slideID].previousElementSibling.classList.remove("hotels__video-cover_hidden");
+						console.log(`Video paused. Back cover to ${slideID} slide`);
+					}
+				});
+			}
+
+			document.addEventListener("DOMContentLoaded", () => {
+				initSlideID();
+				console.log(`Started from ${slideID} slide`);
+				removeCover(players[slideID]);
+			});
+
+			hotels.on("slideChangeTransitionStart", () => {
+				console.log(`Changing from ${slideID} slide`);
+				pauseVideo(players[slideID]);
+			});
+
+			hotels.on("slideChangeTransitionEnd", () => {
+				initSlideID();
+				console.log(`Changed to ${slideID} slide`);
+				removeCover(players[slideID]);
+			});
+		</script>
+		<script>
+			const widgetContainers = document.querySelectorAll(".widgetcontainer");
+
+			widgetContainers.forEach((item) => {
+				item.classList.remove("widgetcontainer");
+				item.classList.remove("oti-content-typography");
+			});
+			if (document.querySelector(".bcrumb")) {
+				document.querySelector(".bcrumb").remove();
+			}
+		</script>
+	</body>
+</html>

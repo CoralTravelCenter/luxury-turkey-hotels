@@ -1,0 +1,12 @@
+.hotels__location-ico {
+    background: url(../../../../../images/hotels-location.png) no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 19px;
+    margin: 0 8px 0 0;
+
+    @media screen and (max-width: 768px) {
+        width: 12px;
+        height: 17px;
+    }
+}

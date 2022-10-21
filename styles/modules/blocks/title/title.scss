@@ -1,0 +1,12 @@
+.title {
+	@include h1;
+	max-width: 550px;
+	margin-bottom: 25px;
+	color: $white;
+
+	@media screen and (max-width: 1006px) {
+		max-width: 100%;
+		margin: 0 auto 25px auto !important;
+		text-align: center;
+	}
+}

@@ -1,0 +1,171 @@
+@mixin h1 {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 54px;
+	line-height: 1.2;
+	margin: 0;
+
+	span {
+		font-weight: 700;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 34px;
+	}
+
+	@media screen and (max-width: 499px) {
+		font-size: 26px;
+	}
+}
+
+@mixin h2 {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.01em;
+	margin: 0;
+
+	@media screen and (max-width: 768px) {
+		font-size: 30px;
+	}
+
+	@media screen and (max-width: 499px) {
+		font-size: 24px;
+	}
+}
+
+@mixin subtitle {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1.2;
+	margin: 0;
+
+	@media screen and (max-width: 768px) {
+		font-size: 25px;
+	}
+
+	@media screen and (max-width: 499px) {
+		font-size: 20px;
+	}
+}
+
+@mixin description {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.2;
+	margin: 0;
+
+	span {
+		font-weight: 700;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+	}
+
+	@media screen and (max-width: 499px) {
+		font-size: 14px;
+	}
+}
+
+@mixin description_min {
+	@include description;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.2;
+
+	@media screen and (max-width: 768px) {
+		font-size: 12px;
+	}
+
+	@media screen and (max-width: 499px) {
+		font-size: 10px;
+	}
+}
+
+@mixin hotel-title {
+	@include h2;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@mixin price {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 1.2;
+	text-align: center;
+
+	span {
+		font-weight: 700;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: calc(44px / 2);
+	}
+}
+
+@mixin tourists {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.2;
+	text-align: center;
+
+	@media screen and (max-width: 768px) {
+		font-size: calc(24px / 2);
+	}
+}
+
+@mixin tripadvisor-reviews {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.2;
+
+	@media screen and (max-width: 768px) {
+		font-size: 12px;
+	}
+
+	@media screen and (max-width: 499px) {
+		font-size: 10px;
+	}
+}
+
+@mixin tooltip {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.2;
+	text-align: center;
+
+	@media screen and (max-width: 499px) {
+		font-size: 10px;
+	}
+}
+
+@mixin advantages_max {
+	font-family: "Museo Sans Cyrl";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.01em;
+
+	@media screen and (max-width: 768px) {
+		font-size: calc(32px / 2);
+	}
+}

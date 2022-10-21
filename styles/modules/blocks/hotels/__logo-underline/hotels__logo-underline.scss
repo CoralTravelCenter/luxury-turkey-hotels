@@ -1,0 +1,16 @@
+.hotels__logo-underline {
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+	background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+	height: 3px;
+	width: 50%;
+}
+
+.swiper-slide-active {
+	.hotels__logo-underline {
+		opacity: 1;
+		visibility: visible;
+		transition: 0.3s;
+	}
+}

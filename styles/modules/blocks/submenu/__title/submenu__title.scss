@@ -1,0 +1,12 @@
+.submenu__title {
+	@include description;
+	font-weight: 600;
+	margin: 0 auto 30px auto;
+	max-width: calc(100% - 120px);
+	text-align: center;
+    transition: .3s;
+
+	@media screen and (max-width: 1006px) {
+		max-width: 90%;
+	}
+}

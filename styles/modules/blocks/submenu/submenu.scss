@@ -1,0 +1,38 @@
+.submenu {
+	position: absolute;
+	background: $white;
+	top: 20px;
+	right: 20px;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	padding: 28px 46px 38px 46px;
+	transition: 0.3s;
+	z-index: 4;
+	border-radius: 2.6vh;
+	max-height: 70vh;
+    height: 50vh;
+	overflow: hidden;
+
+	&::after {
+		content: "";
+		background: linear-gradient(0deg, #fff, transparent);
+		position: absolute;
+		bottom: 0;
+		height: 90px;
+		z-index: 5;
+		width: 100%;
+		left: 0;
+		pointer-events: none;
+	}
+
+	@media screen and (max-width: 1006px) {
+		padding: 40px 46px 44px 46px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 20px 23px 0 23px;
+		border-radius: 17px;
+		max-width: calc(100% - 90px);
+	}
+}

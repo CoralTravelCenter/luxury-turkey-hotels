@@ -1,0 +1,30 @@
+.hotels__button {
+	background: url(../../../../../images/button.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 8px;
+	border: none;
+	height: 5vh;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $white;
+	text-decoration: none;
+	@include description;
+	font-weight: 600;
+	transition: 0.3s;
+	margin: 0;
+
+	&:hover {
+		background: url(../../../../../images/button_hover.png) no-repeat;
+		background-size: 110%;
+		transition: 0.3s;
+		color: $white !important;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 70%;
+		height: 25px;
+	}
+}

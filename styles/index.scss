@@ -1,0 +1,82 @@
+@import "../vendor/normalize.scss";
+@import "../vendor/fonts/fonts.scss";
+
+h1,
+h2,
+h3,
+p,
+span {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@import "../styles/modules/variables.scss";
+@import "../styles/modules/mixins.scss";
+@import "../styles/modules/blocks/exclusive-hotels/exclusive-hotels.scss";
+@import "../styles/modules/blocks/wrapper/wrapper.scss";
+@import "../styles/modules/blocks/wrapper/_absolute/wrapper_absolute.scss";
+
+@import "../styles/modules/blocks/first/first.scss";
+@import "../styles/modules/blocks/advantages/advantages.scss";
+@import "../styles/modules/blocks/title/title.scss";
+@import "../styles/modules/blocks/title/_additional/title_additional.scss";
+@import "../styles/modules/blocks/description/description.scss";
+@import "../styles/modules/blocks/description/_min/description_min.scss";
+@import "../styles/modules/blocks/subtitle/subtitle.scss";
+@import "../styles/modules/blocks/text-content/text-content.scss";
+@import "../styles/modules/blocks/text-content/_right/text-content_right.scss";
+@import "../styles/modules/blocks/wrapper/wrapper.scss";
+@import "../styles/modules/blocks/icons/icons.scss";
+@import "../styles/modules/blocks/icon/icon.scss";
+@import "../styles/modules/blocks/icon/__image/icon__image.scss";
+
+@import "../styles/modules/blocks/hotels/hotels.scss";
+@import "../styles/modules/blocks/hotels/__slider/hotels__slider.scss";
+@import "../styles/modules/blocks/hotels/__video/hotels__video.scss";
+@import "../styles/modules/blocks/hotels/__video-cover/hotels__video-cover.scss";
+@import "../styles/modules/blocks/hotels/__slide/hotels__slide.scss";
+@import "../styles/modules/blocks/hotels/__burger/hotels__burger.scss";
+@import "../styles/modules/blocks/hotels/__stars/hotels__stars.scss";
+@import "../styles/modules/blocks/hotels/__star/hotels__star.scss";
+@import "../styles/modules/blocks/hotels/__title/hotels__title.scss";
+@import "../styles/modules/blocks/hotels/__location/hotels__location.scss";
+@import "../styles/modules/blocks/hotels/__location-ico/hotels__location-ico.scss";
+@import "../styles/modules/blocks/hotels/__location-text/hotels__location-text.scss";
+@import "../styles/modules/blocks/hotels/__description/hotels__description.scss";
+@import "../styles/modules/blocks/hotels/__price/hotels__price.scss";
+@import "../styles/modules/blocks/hotels/__price-text/hotels__price-text.scss";
+@import "../styles/modules/blocks/hotels/__tourists/hotels__tourists.scss";
+@import "../styles/modules/blocks/hotels/__button-wrapper/hotels__button-wrapper.scss";
+@import "../styles/modules/blocks/hotels/__button/hotels__button.scss";
+@import "../styles/modules/blocks/hotels/__logos/hotels__logos.scss";
+@import "../styles/modules/blocks/hotels/__logo-wrapper/hotels__logo-wrapper.scss";
+@import "../styles/modules/blocks/hotels/__logo/hotels__logo.scss";
+@import "../styles/modules/blocks/hotels/__logo-underline/hotels__logo-underline.scss";
+@import "../styles/modules/blocks/hotels/__arrows/hotels__arrows.scss";
+@import "../styles/modules/blocks/hotels/__slide/_no-video/hotels__slide_no-video.scss";
+
+@import "../styles/modules/blocks/submenu/submenu.scss";
+@import "../styles/modules/blocks/submenu/_opened/submenu_opened.scss";
+@import "../styles/modules/blocks/submenu/__close-button/submenu__close-button.scss";
+@import "../styles/modules/blocks/submenu/__title/submenu__title.scss";
+@import "../styles/modules/blocks/submenu/__navlist/submenu__navlist.scss";
+@import "../styles/modules/blocks/submenu/__navitem/submenu__navitem.scss";
+
+@import "../styles/modules/blocks/tripadvisor/tripadvisor.scss";
+@import "../styles/modules/blocks/tripadvisor/__logo/tripadvisor__logo.scss";
+@import "../styles/modules/blocks/tripadvisor/__rating/tripadvisor__rating.scss";
+@import "../styles/modules/blocks/tripadvisor/__rating-text/tripadvisor__rating-text.scss";
+@import "../styles/modules/blocks/tripadvisor/__star/tripadvisor__star.scss";
+@import "../styles/modules/blocks/tripadvisor/__star/_half/tripadvisor__star_half.scss";
+@import "../styles/modules/blocks/tripadvisor/__reviews-count/tripadvisor__reviews-count.scss";
+@import "../styles/modules/blocks/tripadvisor/__link/tripadvisor__link.scss";
+@import "../styles/modules/blocks/tripadvisor/__link-arrow/tripadvisor__link-arrow.scss";
+
+@import "../styles/modules/blocks/map/map.scss";
+@import "../styles/modules/blocks/tooltip/tooltip.scss";
+@import "../styles/modules/blocks/tooltip/__ico/tooltip__ico.scss";
+@import "../styles/modules/blocks/tooltip/__name/tooltip__name.scss";
+
+@import "../styles/modules/blocks/advantages/_max/advantages_max.scss";
+
+@import "../styles/modules/blocks/footer/footer.scss";

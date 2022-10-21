@@ -1,0 +1,2072 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url(../../vendor/fonts/museosanscyrl-500-webfont.woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url(../../vendor/fonts/museosanscyrl-700-webfont.woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url(../../vendor/fonts/museosanscyrl-900-webfont.woff);
+  font-weight: 900;
+}
+h1,
+h2,
+h3,
+p,
+span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.exclusive-hotels {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 1370px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media screen and (max-width: 1439px) {
+  .wrapper {
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .wrapper {
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 1006px) {
+  .wrapper {
+    width: 100%;
+  }
+  .hotels__slide .wrapper {
+    order: 1;
+  }
+}
+
+.wrapper_absolute {
+  position: absolute !important;
+  width: calc(100% - 200px) !important;
+  right: 5vw;
+}
+@media screen and (max-width: 1006px) {
+  .wrapper_absolute {
+    position: relative !important;
+    width: 100% !important;
+    right: unset;
+  }
+}
+
+.first {
+  background: url(../../../../images/banner.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 724px;
+  margin: 0 0 100px 0;
+}
+@media screen and (max-width: 768px) {
+  .first {
+    height: calc(100vh - 141px);
+    background: url(../../../../images/banner_mobile.png) no-repeat;
+    background-size: cover;
+    margin: 0 0 50px 0;
+    background-position: bottom;
+  }
+}
+
+.title {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 1.2;
+  margin: 0;
+  max-width: 550px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+.title span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .title {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .title {
+    max-width: 100%;
+    margin: 0 auto 25px auto !important;
+    text-align: center;
+  }
+}
+
+.title_additional {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin: 0;
+  color: #0e0e2c;
+  margin: 0 0 60px 0;
+}
+@media screen and (max-width: 768px) {
+  .title_additional {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .title_additional {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .title_additional {
+    margin: 0 0 55px 0;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .title_additional {
+    margin: 0 0 30px 0;
+  }
+}
+
+.description {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+}
+.description span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .description {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  .first .description {
+    text-align: center;
+  }
+}
+
+.description_min {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.description_min span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .description_min {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .description_min {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description_min {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .description_min {
+    font-size: 10px;
+  }
+}
+
+.subtitle {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .subtitle {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .subtitle {
+    margin: 0 auto 35px auto;
+    text-align: center;
+  }
+}
+
+.text-content {
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  padding: 200px 75px 0 75px;
+  height: 100%;
+  min-height: 100%;
+  width: 750px;
+  box-sizing: border-box;
+  color: white;
+  background: linear-gradient(180deg, #accdeb 0%, rgba(86, 86, 85, 0) 100%);
+}
+@media screen and (max-width: 1006px) {
+  .text-content {
+    align-self: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: unset;
+    padding: 200px 45px 86px 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text-content {
+    width: calc(100% - 40px);
+    padding: 75px 20px 42px 20px;
+  }
+}
+
+.text-content_right {
+  align-self: flex-end;
+  background: linear-gradient(179.97deg, rgba(31, 31, 31, 0.44) 0.03%, rgba(0, 0, 0, 0.4) 105.62%);
+  padding: 20px;
+  min-height: 100%;
+  max-width: 750px;
+  width: 45vw;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1006px) {
+  .text-content_right {
+    background: #565655;
+    width: 100%;
+    min-height: 45vh;
+    max-width: 100%;
+  }
+}
+
+.wrapper {
+  width: 1370px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media screen and (max-width: 1439px) {
+  .wrapper {
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .wrapper {
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 1006px) {
+  .wrapper {
+    width: 100%;
+  }
+  .hotels__slide .wrapper {
+    order: 1;
+  }
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 60px;
+  -moz-column-gap: 72px;
+       column-gap: 72px;
+  padding: 0;
+  margin: 0 0 100px 0;
+}
+@media screen and (max-width: 1199px) {
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .icons {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icons {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    row-gap: 30px;
+    margin: 0 0 50px 0;
+  }
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .icon {
+    max-width: 30%;
+    width: 100%;
+  }
+}
+.icon::before, .icon::after {
+  content: none !important;
+}
+
+.icon__image {
+  width: 54px;
+  height: 54px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0 12px 0;
+}
+@media screen and (max-width: 768px) {
+  .icon__image {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.hotels {
+  overflow: hidden;
+  margin: 0 0 100px 0;
+}
+@media screen and (max-width: 768px) {
+  .hotels {
+    margin: 0 0 50px 0;
+  }
+}
+
+.hotels__slider {
+  margin: 0 0 28px 0;
+}
+
+.hotels__video {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  left: -25%;
+  top: -25%;
+  pointer-events: none;
+}
+@media screen and (max-width: 1199px) {
+  .hotels__video {
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .hotels__video {
+    height: unset;
+    width: unset;
+    transform: scale(172%);
+    left: unset;
+    top: 45vh;
+    max-height: 45vh;
+  }
+}
+
+.hotels__video-cover {
+  position: relative;
+  width: 100%;
+  max-height: 85vh;
+  opacity: 1;
+  transition: 3s;
+  pointer-events: auto;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  z-index: 8;
+}
+.hotels__video-cover_hidden {
+  pointer-events: none;
+  opacity: 0;
+  transition: 2s;
+}
+@media screen and (max-width: 1006px) {
+  .hotels__video-cover {
+    order: 2;
+    max-height: 40vh;
+  }
+}
+
+.hotels__slide {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotels__burger {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  background: url(../../../../../images/burger.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none !important;
+}
+.hotels__burger:hover {
+  background: url(../../../../../images/burger_hover.png);
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .hotels__burger {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.hotels__stars {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.hotels__star {
+  background: url(../../../../../images/star.png) no-repeat;
+  background-size: contain;
+  width: 3vh;
+  height: 3vh;
+  margin: 0 8px 0 0;
+}
+.hotels__star:last-of-type {
+  margin: 0;
+}
+@media screen and (max-width: 1006px) {
+  .hotels__star {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hotels__star {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.hotels__title {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 5vh;
+  line-height: 1.1;
+  color: #fff;
+  margin: 0;
+  display: block !important;
+}
+@media screen and (max-width: 768px) {
+  .hotels__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .hotels__title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .hotels__title {
+    font-size: 5vw;
+  }
+}
+
+.hotels__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .hotels__location {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.hotels__location-ico {
+  background: url(../../../../../images/hotels-location.png) no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 19px;
+  margin: 0 8px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .hotels__location-ico {
+    width: 12px;
+    height: 17px;
+  }
+}
+
+.hotels__location-text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+  font-size: 2vh;
+}
+.hotels__location-text span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .hotels__location-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .hotels__location-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hotels__location-text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .hotels__location-text {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .hotels__location-text {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hotels__location-text {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 479px) {
+  .hotels__location-text {
+    font-size: 3vw;
+  }
+}
+
+.hotels__description {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  font-size: 2.5vh;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  max-width: 90%;
+}
+.hotels__description span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .hotels__description {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .hotels__description {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .hotels__description {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .hotels__description {
+    font-size: 3vw;
+  }
+}
+
+.hotels__price {
+  margin: 0 auto 0 auto;
+  max-width: 80%;
+}
+
+.hotels__price-text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 5vh;
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+.hotels__price-text span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .hotels__price-text {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .hotels__price-text {
+    font-size: 5vw;
+  }
+}
+
+.hotels__tourists {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 3vh;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .hotels__tourists {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .hotels__tourists {
+    font-size: 3vh;
+  }
+}
+
+.hotels__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hotels__button {
+  background: url(../../../../../images/button.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border: none;
+  height: 5vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 600;
+  transition: 0.3s;
+  margin: 0;
+}
+.hotels__button span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .hotels__button {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .hotels__button {
+    font-size: 14px;
+  }
+}
+.hotels__button:hover {
+  background: url(../../../../../images/button_hover.png) no-repeat;
+  background-size: 110%;
+  transition: 0.3s;
+  color: #fff !important;
+}
+@media screen and (max-width: 768px) {
+  .hotels__button {
+    width: 70%;
+    height: 25px;
+  }
+}
+
+.hotels__logos {
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 1270px;
+}
+@media screen and (max-width: 1439px) {
+  .hotels__logos {
+    max-width: calc(100% - 100px);
+  }
+}
+
+.hotels__logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.hotels__logo-wrapper:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.hotels__logo {
+  margin: 0 0 20px 0;
+  width: 100%;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 1006px) {
+  .hotels__logo {
+    height: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hotels__logo {
+    margin: 0 0 10px 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  .hotels__logo {
+    height: 15px;
+  }
+}
+
+.hotels__logo-underline {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+  height: 3px;
+  width: 50%;
+}
+
+.swiper-slide-active .hotels__logo-underline {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.hotels__arrows {
+  top: -30px;
+}
+.hotels__arrows .swiper-button-next,
+.hotels__arrows .swiper-button-prev {
+  color: #0e0e2c;
+  z-index: 9;
+  outline: none;
+  border: none;
+}
+.hotels__arrows .swiper-button-next:hover,
+.hotels__arrows .swiper-button-prev:hover {
+  background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .hotels__arrows {
+    top: -13px;
+  }
+  .hotels__arrows .swiper-button-next:after,
+.hotels__arrows .swiper-button-prev:after {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  .hotels__slide_no-video {
+    overflow: visible;
+  }
+  .hotels__slide_no-video .hotels__video-cover {
+    top: 95%;
+    bottom: unset;
+    min-height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hotels__slide_no-video .hotels__video-cover {
+    min-height: 70%;
+  }
+}
+@media screen and (max-width: 429px) {
+  .hotels__slide_no-video .hotels__video-cover {
+    min-height: 60%;
+  }
+}
+
+.submenu {
+  position: absolute;
+  background: #fff;
+  top: 20px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  padding: 28px 46px 38px 46px;
+  transition: 0.3s;
+  z-index: 4;
+  border-radius: 2.6vh;
+  max-height: 70vh;
+  height: 50vh;
+  overflow: hidden;
+}
+.submenu::after {
+  content: "";
+  background: linear-gradient(0deg, #fff, transparent);
+  position: absolute;
+  bottom: 0;
+  height: 90px;
+  z-index: 5;
+  width: 100%;
+  left: 0;
+  pointer-events: none;
+}
+@media screen and (max-width: 1006px) {
+  .submenu {
+    padding: 40px 46px 44px 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .submenu {
+    padding: 20px 23px 0 23px;
+    border-radius: 17px;
+    max-width: calc(100% - 90px);
+  }
+}
+
+.submenu_opened {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.3s;
+}
+
+.submenu__close-button {
+  background: url(../../../../../images/close-btn.png) no-repeat;
+  background-size: contain;
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s;
+  outline: none !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.submenu__close-button:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .submenu__close-button {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.submenu__title {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 600;
+  margin: 0 auto 30px auto;
+  max-width: calc(100% - 120px);
+  text-align: center;
+  transition: 0.3s;
+}
+.submenu__title span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .submenu__title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .submenu__title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .submenu__title {
+    max-width: 90%;
+  }
+}
+
+.submenu__navlist {
+  padding: 0;
+  list-style: none;
+  overflow: scroll;
+  height: calc(50vh - 48px);
+  margin: 0;
+}
+.submenu__navlist::-webkit-scrollbar {
+  background: #fff;
+  width: 3px;
+}
+.submenu__navlist::-webkit-scrollbar-thumb {
+  background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+  width: 3px;
+}
+
+.submenu__navitem {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0 0 14px 0;
+  font-weight: 600;
+  cursor: pointer;
+  background: #0e0e2c;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.submenu__navitem span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .submenu__navitem {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .submenu__navitem {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .submenu__navitem {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .submenu__navitem {
+    font-size: 10px;
+  }
+}
+.submenu__navitem:last-of-type {
+  margin: 0 0 50px 0;
+}
+.submenu__navitem:hover {
+  transition: 0.3s;
+  background: linear-gradient(58.39deg, #fc709a -5.95%, #ffcc00 102.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.tripadvisor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tripadvisor__logo {
+  background: url(../../../../../images/advisor.png) no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 15px;
+  margin: 0 16px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__logo {
+    margin: 0 8px 0 0;
+    width: 12px;
+    height: 7.5px;
+  }
+}
+
+.tripadvisor__rating {
+  display: flex;
+  align-items: center;
+  margin: 0 16px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__rating {
+    margin: 0 8px 0 0;
+  }
+}
+
+.tripadvisor__rating-text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 600;
+  color: #34e0a1;
+  margin: 0 8px 0 0;
+}
+.tripadvisor__rating-text span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__rating-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .tripadvisor__rating-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__rating-text {
+    margin: 0 4px 0 0;
+  }
+}
+
+.tripadvisor__star {
+  border-radius: 50px;
+  width: 14px;
+  height: 14px;
+  background: url(../../../../../images/tripadvisor-full-rate.png) no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  margin: 0 8px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__star {
+    width: 7px;
+    height: 7px;
+    margin: 0 4px 0 0;
+  }
+}
+
+.tripadvisor__star_half {
+  background: url(../../../../../../images/tripadvisor-half-rate.png) no-repeat;
+  background-size: contain;
+}
+
+.tripadvisor__reviews-count {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0 16px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__reviews-count {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .tripadvisor__reviews-count {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__reviews-count {
+    margin: 0 8px 0 0;
+  }
+}
+
+.tripadvisor__link {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__link {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .tripadvisor__link {
+    font-size: 10px;
+  }
+}
+.tripadvisor__link:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+  color: #fff !important;
+}
+
+.tripadvisor__link-arrow {
+  background: url(../../../../../images/link-arrow.png) no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 19px;
+  margin: 0 0 0 16px;
+}
+@media screen and (max-width: 768px) {
+  .tripadvisor__link-arrow {
+    margin: 0 0 0 8px;
+    width: 5px;
+    height: 10px;
+  }
+}
+
+.map {
+  margin: 0 0 126px 0;
+  position: relative;
+}
+@media screen and (max-width: 1006px) {
+  .map {
+    margin: 0 0 100px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .map {
+    margin: 0 0 50px 0;
+  }
+}
+
+.desktop {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+}
+
+.tooltip {
+  position: absolute !important;
+  cursor: pointer;
+  display: flex !important;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+  opacity: 1 !important;
+  font-size: unset !important;
+  text-align: unset !important;
+  font-weight: unset !important;
+  font-style: unset !important;
+  text-decoration: unset !important;
+  text-shadow: unset !important;
+  letter-spacing: unset !important;
+  word-break: unset !important;
+  word-spacing: unset !important;
+  white-space: unset !important;
+  line-break: unset !important;
+  word-wrap: unset !important;
+  z-index: 9 !important;
+  line-height: unset !important;
+}
+
+#cape-bodrum-luxury-hotel-beach-bodrum {
+  top: 54.7%;
+  left: 26.1%;
+}
+@media screen and (max-width: 1006px) {
+  #cape-bodrum-luxury-hotel-beach-bodrum {
+    top: 53.7%;
+    left: 25.9%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #cape-bodrum-luxury-hotel-beach-bodrum {
+    top: 50%;
+    left: 31.3%;
+  }
+}
+
+#caja-by-maxx-royal-bodrum {
+  top: 54.9%;
+  left: 26.6%;
+}
+@media screen and (max-width: 1006px) {
+  #caja-by-maxx-royal-bodrum {
+    top: 54.2%;
+    left: 26.4%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #caja-by-maxx-royal-bodrum {
+    top: 50.4%;
+    left: 32.2%;
+  }
+}
+
+#hilton-dalaman-sarigerme-resort-spa-dalaman {
+  top: 73.8%;
+  left: 45.4%;
+}
+@media screen and (max-width: 1006px) {
+  #hilton-dalaman-sarigerme-resort-spa-dalaman {
+    top: 73.1%;
+    left: 45.3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hilton-dalaman-sarigerme-resort-spa-dalaman {
+    top: 67.4%;
+    left: 71.4%;
+  }
+}
+
+#mandarin-oriental-bodrum {
+  top: 55.9%;
+  left: 27.3%;
+  z-index: 20 !important;
+}
+@media screen and (max-width: 1006px) {
+  #mandarin-oriental-bodrum {
+    top: 55.1%;
+    left: 27.1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #mandarin-oriental-bodrum {
+    top: 51.2%;
+    left: 33.8%;
+  }
+}
+
+#kempinski-hotel-barbaros-bay-bodrum {
+  top: 61.5%;
+  left: 28.4%;
+  z-index: 23 !important;
+}
+@media screen and (max-width: 1006px) {
+  #kempinski-hotel-barbaros-bay-bodrum {
+    top: 60.8%;
+    left: 28.4%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #kempinski-hotel-barbaros-bay-bodrum {
+    top: 56.2%;
+    left: 36.1%;
+  }
+}
+
+#doora-bodrum-hotel {
+  top: 57.7%;
+  left: 28.2%;
+  z-index: 21 !important;
+}
+@media screen and (max-width: 1006px) {
+  #doora-bodrum-hotel {
+    top: 57.3%;
+    left: 27.9%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #doora-bodrum-hotel {
+    top: 53%;
+    left: 35.6%;
+  }
+}
+
+#mivara-luxury-resort-spa-bodrum {
+  top: 55.7%;
+  left: 26.8%;
+}
+@media screen and (max-width: 1006px) {
+  #mivara-luxury-resort-spa-bodrum {
+    top: 54.9%;
+    left: 26.7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #mivara-luxury-resort-spa-bodrum {
+    top: 50.7%;
+    left: 32.9%;
+  }
+}
+
+#le-meridien-bodrum-beach-resort {
+  top: 54.1%;
+  left: 28.9%;
+}
+@media screen and (max-width: 1006px) {
+  #le-meridien-bodrum-beach-resort {
+    top: 53.1%;
+    left: 28.9%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #le-meridien-bodrum-beach-resort {
+    top: 49.5%;
+    left: 37.3%;
+  }
+}
+
+#xanadu-island-hotel {
+  top: 62.5%;
+  left: 25.5%;
+  z-index: 23 !important;
+}
+@media screen and (max-width: 1006px) {
+  #xanadu-island-hotel {
+    top: 61.6%;
+    left: 25.4%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #xanadu-island-hotel {
+    top: 57.2%;
+    left: 30.3%;
+  }
+}
+
+#be-premium-bodrum {
+  top: 56.7%;
+  left: 28.7%;
+  z-index: 20 !important;
+}
+@media screen and (max-width: 1006px) {
+  #be-premium-bodrum {
+    top: 56.5%;
+    left: 28.7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #be-premium-bodrum {
+    top: 52.1%;
+    left: 36.3%;
+  }
+}
+
+#kaya-palazzo-resort-residence {
+  top: 60.2%;
+  left: 27.3%;
+  z-index: 22 !important;
+}
+@media screen and (max-width: 1006px) {
+  #kaya-palazzo-resort-residence {
+    top: 59.7%;
+    left: 27.3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #kaya-palazzo-resort-residence {
+    top: 55%;
+    left: 33.7%;
+  }
+}
+
+#lujo-hotel-bodrum {
+  top: 55.2%;
+  left: 29.2%;
+}
+@media screen and (max-width: 1006px) {
+  #lujo-hotel-bodrum {
+    top: 54.4%;
+    left: 29.1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #lujo-hotel-bodrum {
+    top: 50.3%;
+    left: 37.9%;
+  }
+}
+
+#amanruya-resort-hotel {
+  top: 57%;
+  left: 27.5%;
+  z-index: 20 !important;
+}
+@media screen and (max-width: 1006px) {
+  #amanruya-resort-hotel {
+    top: 56.2%;
+    left: 27.5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #amanruya-resort-hotel {
+    top: 52.2%;
+    left: 34.5%;
+  }
+}
+
+#six-senses-kaplankaya {
+  top: 48.5%;
+  left: 27.2%;
+}
+@media screen and (max-width: 1006px) {
+  #six-senses-kaplankaya {
+    top: 47.4%;
+    left: 27%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #six-senses-kaplankaya {
+    top: 44.1%;
+    left: 33.4%;
+  }
+}
+
+.tooltip__ico {
+  background: url(../../../../../images/tooltip_active.png) no-repeat;
+  background-size: contain;
+  height: 12px;
+  width: 10px;
+  transition: 0.3s;
+  box-sizing: border-box;
+  pointer-events: all !important;
+}
+
+.tooltip__name {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  color: #0e0e2c;
+  padding: 6px 12px;
+  background: #fff;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  transform: translateY(4px);
+  border-radius: 6px;
+  max-height: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(-25px);
+}
+@media screen and (max-width: 499px) {
+  .tooltip__name {
+    font-size: 10px;
+  }
+}
+
+.tooltip__ico:hover ~ .tooltip__name {
+  transition: 0.3s;
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  max-height: unset;
+}
+
+.advantages_max {
+  background: #f2f7fc;
+  padding: 80px 0 100px 0;
+  margin: 0 0 90px 0;
+}
+.advantages_max .icons {
+  grid-template-columns: repeat(6, 1fr);
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .advantages_max .icons {
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    margin: 0 0 50px 0;
+  }
+}
+.advantages_max .icon__image {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .advantages_max .icon__image {
+    width: 50px;
+    height: 50px;
+  }
+}
+.advantages_max .title_additional {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+@media screen and (max-width: 768px) {
+  .advantages_max .title_additional {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .advantages_max {
+    padding: 65px 0 80px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages_max {
+    padding: 32px 0 40px 0;
+  }
+}
+
+.footer {
+  display: flex;
+  margin: 0 auto 80px auto;
+  max-width: 1182px;
+  justify-content: space-between;
+}
+
+.footer__left {
+  width: calc(50% - 21px);
+  margin: 0 20px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__center {
+  background: #000;
+  width: 1px;
+  height: 200px;
+}
+
+.footer__right {
+  width: calc(50% - 61px);
+  margin: 0 0 0 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  margin: 0 0 23px 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.footer__description {
+  margin: 0 0 30px 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.footer__description_right {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer__description_right a {
+  color: #000;
+}
+
+.footer__social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 475px;
+}
+
+.footer__phone {
+  color: #ffae00 !important;
+  font-size: 56px !important;
+  font-weight: 500 !important;
+  line-height: 66px !important;
+  margin: 0 0 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer {
+    max-width: calc(100% - 256px);
+  }
+  .footer__social-wrapper {
+    max-width: 350px;
+  }
+  .footer__social-ico {
+    max-width: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer {
+    max-width: calc(100% - 200px);
+  }
+  .footer__right {
+    max-width: calc(50% - 21px);
+    margin: 0 0 0 20px;
+  }
+  .footer__title {
+    font-size: 28px;
+  }
+  .footer__phone {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+  }
+  .footer__description {
+    font-size: 20px;
+  }
+  .footer__description_right {
+    max-width: 330px;
+    font-size: 16px;
+  }
+  .footer__social-wrapper {
+    max-width: 250px;
+  }
+  .footer__social-ico {
+    max-width: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: calc(100% - 30px);
+  }
+  .footer__center {
+    display: none;
+  }
+  .footer__left {
+    margin: 0 auto 120px auto;
+    width: 100%;
+    align-items: center;
+  }
+  .footer__right {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .footer__title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .footer__description_right {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__left {
+    margin: 0 auto 80px auto;
+  }
+  .footer__title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}

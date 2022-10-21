@@ -1,0 +1,38 @@
+.advantages_max {
+	background: $light-grey;
+	padding: 80px 0 100px 0;
+	margin: 0 0 90px 0;
+
+	.icons {
+		grid-template-columns: repeat(6, 1fr);
+		column-gap: 24px;
+		margin: 0;
+
+		@media screen and (max-width: 768px) {
+			column-gap: 6px;
+            margin: 0 0 50px 0;
+		}
+	}
+
+	.icon__image {
+		width: 100px;
+		height: 100px;
+
+		@media screen and (max-width: 768px) {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	.title_additional {
+		@include advantages_max;
+	}
+
+	@media screen and (max-width: 1006px) {
+		padding: 65px 0 80px 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 32px 0 40px 0;
+	}
+}

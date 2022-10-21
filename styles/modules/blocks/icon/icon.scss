@@ -1,0 +1,15 @@
+.icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media screen and (max-width: 1199px) {
+		max-width: 30%;
+		width: 100%;
+	}
+
+	&::before,
+	&::after {
+		content: none !important;
+	}
+}

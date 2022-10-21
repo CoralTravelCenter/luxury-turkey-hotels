@@ -1,0 +1,22 @@
+.hotels__slide_no-video {
+    @media screen and (max-width: 1006px) {
+        overflow: visible;
+
+        .hotels__video-cover {
+            top: 95%;
+            bottom: unset;
+            min-height: 100%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .hotels__video-cover {
+            min-height: 70%;
+        }
+    }
+    @media screen and (max-width: 429px) {
+        .hotels__video-cover {
+            min-height: 60%;
+        }
+    }
+
+}

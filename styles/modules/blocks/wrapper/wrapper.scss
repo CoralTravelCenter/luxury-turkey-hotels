@@ -1,0 +1,24 @@
+.wrapper {
+	width: 1370px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	@media screen and (max-width: 1439px) {
+		width: calc(100% - 40px);
+	}
+
+	@media screen and (max-width: 1199px) {
+		width: calc(100% - 40px);
+	}
+
+	@media screen and (max-width: 1006px) {
+		width: 100%;
+
+		.hotels__slide & {
+			order: 1;
+		}
+	}
+}

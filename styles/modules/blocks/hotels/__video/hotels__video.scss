@@ -1,0 +1,24 @@
+.hotels__video {
+	position: absolute;
+	width: 150%;
+	height: 150%;
+	left: -25%;
+	top: -25%;
+	pointer-events: none;
+
+	@media screen and (max-width: 1199px) {
+		height: 200%;
+		width: 200%;
+		top: -50%;
+		left: -50%;
+	}
+
+	@media screen and (max-width: 1006px) {
+		height: unset;
+		width: unset;
+		transform: scale(172%);
+		left: unset;
+		top: 45vh;
+		max-height: 45vh;
+	}
+}

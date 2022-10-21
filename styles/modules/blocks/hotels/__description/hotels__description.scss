@@ -1,0 +1,15 @@
+.hotels__description {
+	@include description;
+	font-size: 2.5vh;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	max-width: 90%;
+
+	@media screen and (max-width: 1006px) {
+		font-size: 2.5vw;
+	}
+
+	@media screen and (max-width: 479px) {
+		font-size: 3vw;
+	}
+}

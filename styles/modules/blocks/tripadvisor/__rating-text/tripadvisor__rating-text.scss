@@ -1,0 +1,10 @@
+.tripadvisor__rating-text {
+	@include description;
+	font-weight: 600;
+	color: $tripadvisor;
+    margin: 0 8px 0 0;
+
+	@media screen and (max-width: 768px) {
+		margin: 0 4px 0 0;	
+	}
+}

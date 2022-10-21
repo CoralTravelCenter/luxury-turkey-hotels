@@ -1,0 +1,162 @@
+.footer {
+	display: flex;
+	margin: 0 auto 80px auto;
+	max-width: 1182px;
+	justify-content: space-between;
+}
+
+.footer__left {
+	width: calc(50% - 21px);
+	margin: 0 20px 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__center {
+	background: #000;
+	width: 1px;
+	height: 200px;
+}
+
+.footer__right {
+	width: calc(50% - 61px);
+	margin: 0 0 0 60px;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__title {
+	margin: 0 0 23px 0;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 38px;
+}
+
+.footer__description {
+	margin: 0 0 30px 0;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.footer__description_right {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+
+	a {
+		color: #000;
+	}
+}
+
+.footer__social-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 475px;
+}
+.footer__phone {
+	color: #ffae00 !important;
+	font-size: 56px !important;
+	font-weight: 500 !important;
+	line-height: 66px !important;
+	margin: 0 0 36px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 1439px) {
+	.footer {
+		max-width: calc(100% - 256px);
+	}
+
+	.footer__social-wrapper {
+		max-width: 350px;
+	}
+
+	.footer__social-ico {
+		max-width: 60px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.footer {
+		max-width: calc(100% - 200px);
+	}
+
+	.footer__right {
+		max-width: calc(50% - 21px);
+		margin: 0 0 0 20px;
+	}
+
+	.footer__title {
+		font-size: 28px;
+	}
+
+	.footer__phone {
+		font-size: 26px !important;
+		line-height: 1.2 !important;
+	}
+
+	.footer__description {
+		font-size: 20px;
+	}
+
+	.footer__description_right {
+		max-width: 330px;
+		font-size: 16px;
+	}
+
+	.footer__social-wrapper {
+		max-width: 250px;
+	}
+
+	.footer__social-ico {
+		max-width: 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		max-width: calc(100% - 30px);
+	}
+
+	.footer__center {
+		display: none;
+	}
+
+	.footer__left {
+		margin: 0 auto 120px auto;
+		width: 100%;
+		align-items: center;
+	}
+
+	.footer__right {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 100%;
+		align-items: center;
+	}
+
+	.footer__title {
+		font-size: 42px;
+		line-height: 50px;
+	}
+
+	.footer__description_right {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.footer__left {
+		margin: 0 auto 80px auto;
+	}
+
+	.footer__title {
+		font-size: 32px;
+		line-height: 1.2;
+	}
+}

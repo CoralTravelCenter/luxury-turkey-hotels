@@ -1,0 +1,28 @@
+.hotels__burger {
+	width: 5vh;
+	height: 5vh;
+	border-radius: 50px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 3;
+	background: url(../../../../../images/burger.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none !important;
+
+	&:hover {
+		background: url(../../../../../images/burger_hover.png);
+		transition: 0.3s;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: calc(54px / 2);
+		height: calc(54px / 2);
+	}
+}

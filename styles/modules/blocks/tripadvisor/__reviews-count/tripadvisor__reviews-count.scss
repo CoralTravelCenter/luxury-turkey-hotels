@@ -1,0 +1,8 @@
+.tripadvisor__reviews-count {
+    @include tripadvisor-reviews;
+    margin: 0 16px 0 0;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 8px 0 0;
+	}
+}
